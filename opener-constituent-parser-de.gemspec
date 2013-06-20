@@ -3,7 +3,8 @@ require File.expand_path(
   __FILE__
 )
 
-generated = Dir.glob('core/site-packages/pre_build/**/*')
+generated = Dir.glob('core/site-packages/pre_build/**/*') +
+  Dir.glob('core/vendor/stanford-parser/*.jar')
 
 Gem::Specification.new do |gem|
   gem.name        = 'opener-constituent-parser-de'

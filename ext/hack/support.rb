@@ -27,6 +27,12 @@ PRE_INSTALL_REQUIREMENTS = File.expand_path(
   __FILE__
 )
 
+# Name of the Stanford zip archive.
+STANFORD_ARCHIVE = 'stanford-parser-2013-04-05.zip'
+
+# URL to the zip archive of the Stanford parser.
+STANFORD_ARCHIVE_URL = "http://nlp.stanford.edu/software/#{STANFORD_ARCHIVE}"
+
 ##
 # Verifies the requirements to install thi Gem.
 #
