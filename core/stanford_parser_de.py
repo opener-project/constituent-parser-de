@@ -4,8 +4,6 @@ import sys
 import getopt
 import codecs
 import os
-from VUKafParserPy import KafParser
-from lxml import etree
 import tempfile
 from subprocess import Popen,PIPE
 import shutil
@@ -13,12 +11,26 @@ import glob
 import logging
 
 
+__module_folder__ = os.path.dirname(__file__)
+
+# This updates the load path to ensure that the local site-packages directory
+# can be used to load packages (e.g. a locally installed copy of lxml).
+sys.path.append(os.path.join(__module_folder__, 'site-packages/pre_build'))
+sys.path.append(os.path.join(__module_folder__, 'site-packages/pre_install'))
+
+from VUKafParserPy import KafParser
+from lxml import etree
+
+## CONFIGURATION FOR THE STANFORD PARSER #
+
+STANFORD_HOME=os.path.join(__module_folder__,'vendor','stanford-parser')
+STANFORD_MEM="3g"
+STANFORD_GERMAN_OPTS='-hMarkov 1 -vMarkov 2 -vSelSplitCutOff 300 -uwm 1 -unknownSuffixSize 2 -nodeCleanup 2 -encoding UTF-8'
+STANFORD_PARSER_OPTS='-tokenized'
+STANDFORD_GRAMMAR='edu/stanford/nlp/models/lexparser/germanPCFG.ser.gz'
+##########################################
+
 logging.basicConfig(stream=sys.stderr,format='%(asctime)s - %(levelname)s - %(message)s',level=logging.DEBUG)
-
-__module_dir = os.path.dirname(__file__)
-STANFORD_HOME = '/Users/ruben/NLP_tools/stanford-parser-2013-04-05'
-my_stanford_script = os.path.join(__module_dir,'lexparser-de.sh')
-
 
 ## MAIN ##
 
@@ -68,24 +80,29 @@ if len(current_sent) !=0:
  
 logging.debug('Calling to Stanford parser for GERMAN in '+STANFORD_HOME)
 
-## CALL TO STANFORD
-os.environ['STANFORD_HOME'] = STANFORD_HOME
-stanford_pro = Popen(my_stanford_script,stdin=PIPE,stdout=PIPE,stderr=PIPE,shell=True)
 
+# Creating a temp file with the input
+tmp_file = tempfile.NamedTemporaryFile(mode='w', delete=False)
 for sentence in sentences:
-  for token in sentence:
-    stanford_pro.stdin.write(token.encode('utf-8')+' ')
-  stanford_pro.stdin.write('\n')
-stanford_pro.stdin.close()
+    for token in sentence:
+        tmp_file.write(token.encode('utf-8')+' ')
+    tmp_file.write('\n')
+tmp_file.close()
+######################################
 
-num_sents = 0
-for line in stanford_pro.stdout:
-  print line.strip()
-  num_sents += 1
-stanford_pro.terminate()
-  
-logging.debug('Number of sentences in the input KAF: '+str(len(sentences)))
-logging.debug('Number of sentences generated (must be equal to num. sentences):'+str(num_sents))
-logging.debug('PROCESS DONE')
+cmd = 'java -Xmx"'+STANFORD_MEM+'" -cp "'+STANFORD_HOME+'/*:" edu.stanford.nlp.parser.lexparser.LexicalizedParser -maxLength "1000" '
+cmd+= ' -tLPP "edu.stanford.nlp.parser.lexparser.NegraPennTreebankParserParams" '+STANFORD_GERMAN_OPTS+' '+STANFORD_PARSER_OPTS
+cmd+= ' -outputFormat "oneline" -outputFormatOptions "markHeadNodes" -sentences newline -loadFromSerializedFile '+STANDFORD_GRAMMAR
+cmd+=' '+tmp_file.name
 
+stanford_process = Popen(cmd,stdout=PIPE,stderr=PIPE,shell=True)
+code = stanford_process.wait()
+logging.debug('Stanford parser finished with code:'+str(code))
+stanford_output = stanford_process.stdout.read()
+stanford_error = stanford_process.stderr.read()
+logging.debug('STANFORD LOG: '+ stanford_error)
+print stanford_output.strip()
+
+os.remove(tmp_file.name)
 sys.exit(0)
+
