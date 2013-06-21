@@ -61,7 +61,8 @@ task :stanford do
 
     puts 'Moving JAR archives into place...'
 
-    sh "cp -f #{directory}/*.jar #{STANFORD_DIRECTORY}"
+    sh "cp -f #{directory}/stanford-parser.jar #{STANFORD_DIRECTORY}"
+    sh "cp -f #{directory}/stanford-parser-2.0.5-models.jar #{STANFORD_DIRECTORY}"
   end
 end
 
