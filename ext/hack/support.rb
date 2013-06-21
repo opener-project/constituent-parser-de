@@ -27,6 +27,12 @@ PRE_INSTALL_REQUIREMENTS = File.expand_path(
   __FILE__
 )
 
+# Path to the directory containing the Stanford parser files.
+STANFORD_DIRECTORY = File.expand_path(
+  '../../../core/vendor/stanford-parser',
+  __FILE__
+)
+
 # Name of the Stanford zip archive.
 STANFORD_ARCHIVE = 'stanford-parser-2013-04-05.zip'
 

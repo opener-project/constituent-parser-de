@@ -19,23 +19,32 @@ task :requirements do
   require_executable('unzip')
 end
 
+namespace :clean do
+  desc 'Removes Stanford parser related files'
+  task :stanford do
+    Dir.glob(File.join(TMP_DIRECTORY, '*')).each do |path|
+      sh "rm -rf #{path}"
+    end
+
+    Dir.glob(File.join(STANFORD_DIRECTORY, '*.jar')).each do |path|
+      sh "rm #{path}"
+    end
+  end
+end
+
 desc 'Cleans up the repository'
 task :clean => [
   'python:clean:bytecode',
   'python:clean:packages',
   'clean:tmp',
-  'clean:gems'
+  'clean:gems',
+  'clean:stanford'
 ]
 
 desc 'Installs the Stanford parser JAR archives'
 task :stanford do
   zipname   = File.join(TMP_DIRECTORY, STANFORD_ARCHIVE)
   directory = File.join(TMP_DIRECTORY, File.basename(STANFORD_ARCHIVE, '.zip'))
-
-  vendor_directory = File.expand_path(
-    '../core/vendor/stanford-parser',
-    __FILE__
-  )
 
   Dir.chdir(TMP_DIRECTORY) do
     unless File.file?(zipname)
@@ -52,7 +61,7 @@ task :stanford do
 
     puts 'Moving JAR archives into place...'
 
-    sh "cp -f #{directory}/*.jar #{vendor_directory}"
+    sh "cp -f #{directory}/*.jar #{STANFORD_DIRECTORY}"
   end
 end
 
