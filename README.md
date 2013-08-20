@@ -1,3 +1,5 @@
+[![Build Status](https://drone.io/github.com/opener-project/constituent-parser-de/status.png)](https://drone.io/github.com/opener-project/constituent-parser-de/latest)
+
 VU-parser-DE_kernel
 ===================
 
