@@ -1,0 +1,964 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<KAF xml:lang="de">
+  <kafHeader>
+    <linguisticProcessors layer="text">
+      <lp timestamp="2013-04-26T12:03:36CEST" version="1.0" name="Open-nlp sentence splitter"/>
+      <lp timestamp="2013-04-26T12:03:36CEST" version="1.0" name="Open-nlp tokenizer"/>
+    </linguisticProcessors>
+    <linguisticProcessor layer="term">
+      <lp timestamp="2013-12-23T09:47:35CET" version="1.0" name="Open nlp pos tagger"/>
+    </linguisticProcessor>
+  </kafHeader>
+  <text>
+    <wf wid="w_1" sent="1">Boletopsis</wf>
+    <wf wid="w_2" sent="1">nothofagi</wf>
+    <wf wid="w_3" sent="1">ist</wf>
+    <wf wid="w_4" sent="1">eine</wf>
+    <wf wid="w_5" sent="1">Ständerpilzart</wf>
+    <wf wid="w_6" sent="1">aus</wf>
+    <wf wid="w_7" sent="1">der</wf>
+    <wf wid="w_8" sent="1">Familie</wf>
+    <wf wid="w_9" sent="1">der</wf>
+    <wf wid="w_10" sent="1">Weißsporstachelingsverwandten</wf>
+    <wf wid="w_11" sent="1">(</wf>
+    <wf wid="w_12" sent="1">Bankeraceae</wf>
+    <wf wid="w_13" sent="1">)</wf>
+    <wf wid="w_14" sent="1">.</wf>
+    <wf wid="w_15" sent="2">Der</wf>
+    <wf wid="w_16" sent="2">Pilz</wf>
+    <wf wid="w_17" sent="2">bildet</wf>
+    <wf wid="w_18" sent="2">graue</wf>
+    <wf wid="w_19" sent="2">,</wf>
+    <wf wid="w_20" sent="2">gestielte</wf>
+    <wf wid="w_21" sent="2">Fruchtkörper</wf>
+    <wf wid="w_22" sent="2">aus</wf>
+    <wf wid="w_23" sent="2">,</wf>
+    <wf wid="w_24" sent="2">die</wf>
+    <wf wid="w_25" sent="2">in</wf>
+    <wf wid="w_26" sent="2">Büscheln</wf>
+    <wf wid="w_27" sent="2">wachsen</wf>
+    <wf wid="w_28" sent="2">.</wf>
+    <wf wid="w_29" sent="3">Wie</wf>
+    <wf wid="w_30" sent="3">alle</wf>
+    <wf wid="w_31" sent="3">Boletopsis-Arten</wf>
+    <wf wid="w_32" sent="3">hat</wf>
+    <wf wid="w_33" sent="3">er</wf>
+    <wf wid="w_34" sent="3">eine</wf>
+    <wf wid="w_35" sent="3">porige</wf>
+    <wf wid="w_36" sent="3">Fruchtschicht</wf>
+    <wf wid="w_37" sent="3">.</wf>
+    <wf wid="w_38" sent="4">Er</wf>
+    <wf wid="w_39" sent="4">unterscheidet</wf>
+    <wf wid="w_40" sent="4">sich</wf>
+    <wf wid="w_41" sent="4">von</wf>
+    <wf wid="w_42" sent="4">seinen</wf>
+    <wf wid="w_43" sent="4">Gattungsgenossen</wf>
+    <wf wid="w_44" sent="4">unter</wf>
+    <wf wid="w_45" sent="4">anderem</wf>
+    <wf wid="w_46" sent="4">durch</wf>
+    <wf wid="w_47" sent="4">taillierte</wf>
+    <wf wid="w_48" sent="4">,</wf>
+    <wf wid="w_49" sent="4">längliche</wf>
+    <wf wid="w_50" sent="4">Sporen</wf>
+    <wf wid="w_51" sent="4">und</wf>
+    <wf wid="w_52" sent="4">eine</wf>
+    <wf wid="w_53" sent="4">Grünverfärbung</wf>
+    <wf wid="w_54" sent="4">als</wf>
+    <wf wid="w_55" sent="4">KOH-Reaktion</wf>
+    <wf wid="w_56" sent="4">.</wf>
+    <wf wid="w_57" sent="5">Boletopsis</wf>
+    <wf wid="w_58" sent="5">nothofagi</wf>
+    <wf wid="w_59" sent="5">ist</wf>
+    <wf wid="w_60" sent="5">ein</wf>
+    <wf wid="w_61" sent="5">neuseeländischer</wf>
+    <wf wid="w_62" sent="5">Endemit</wf>
+    <wf wid="w_63" sent="5">und</wf>
+    <wf wid="w_64" sent="5">bildet</wf>
+    <wf wid="w_65" sent="5">Mykorrhiza</wf>
+    <wf wid="w_66" sent="5">mit</wf>
+    <wf wid="w_67" sent="5">der</wf>
+    <wf wid="w_68" sent="5">Scheinbuche</wf>
+    <wf wid="w_69" sent="5">Nothofagus</wf>
+    <wf wid="w_70" sent="5">fusca</wf>
+    <wf wid="w_71" sent="5">.</wf>
+    <wf wid="w_72" sent="6">Wann</wf>
+    <wf wid="w_73" sent="6">genau</wf>
+    <wf wid="w_74" sent="6">der</wf>
+    <wf wid="w_75" sent="6">Pilz</wf>
+    <wf wid="w_76" sent="6">Fruchtkörper</wf>
+    <wf wid="w_77" sent="6">ausbildet</wf>
+    <wf wid="w_78" sent="6">,</wf>
+    <wf wid="w_79" sent="6">ist</wf>
+    <wf wid="w_80" sent="6">unbekannt</wf>
+    <wf wid="w_81" sent="6">,</wf>
+    <wf wid="w_82" sent="6">sie</wf>
+    <wf wid="w_83" sent="6">wurden</wf>
+    <wf wid="w_84" sent="6">bislang</wf>
+    <wf wid="w_85" sent="6">stets</wf>
+    <wf wid="w_86" sent="6">im</wf>
+    <wf wid="w_87" sent="6">Herbst</wf>
+    <wf wid="w_88" sent="6">gefunden</wf>
+    <wf wid="w_89" sent="6">.</wf>
+    <wf wid="w_90" sent="7">Die</wf>
+    <wf wid="w_91" sent="7">Erstbeschreibung</wf>
+    <wf wid="w_92" sent="7">der</wf>
+    <wf wid="w_93" sent="7">Art</wf>
+    <wf wid="w_94" sent="7">von</wf>
+    <wf wid="w_95" sent="7">Jerry</wf>
+    <wf wid="w_96" sent="7">Cooper</wf>
+    <wf wid="w_97" sent="7">und</wf>
+    <wf wid="w_98" sent="7">Patrick</wf>
+    <wf wid="w_99" sent="7">Leonard</wf>
+    <wf wid="w_100" sent="7">stammt</wf>
+    <wf wid="w_101" sent="7">aus</wf>
+    <wf wid="w_102" sent="7">dem</wf>
+    <wf wid="w_103" sent="7">Jahr</wf>
+    <wf wid="w_104" sent="7">2012.</wf>
+    <wf wid="w_105" sent="8">Boletopsis</wf>
+    <wf wid="w_106" sent="8">nothofagi</wf>
+    <wf wid="w_107" sent="8">ist</wf>
+    <wf wid="w_108" sent="8">DNA-Untersuchungen</wf>
+    <wf wid="w_109" sent="8">zufolge</wf>
+    <wf wid="w_110" sent="8">ein</wf>
+    <wf wid="w_111" sent="8">eher</wf>
+    <wf wid="w_112" sent="8">basaler</wf>
+    <wf wid="w_113" sent="8">Vertreter</wf>
+    <wf wid="w_114" sent="8">der</wf>
+    <wf wid="w_115" sent="8">Gattung</wf>
+    <wf wid="w_116" sent="8">Boletopsis</wf>
+    <wf wid="w_117" sent="8">.</wf>
+    <wf wid="w_118" sent="9">Wahrscheinlich</wf>
+    <wf wid="w_119" sent="9">ist</wf>
+    <wf wid="w_120" sent="9">der</wf>
+    <wf wid="w_121" sent="9">Pilz</wf>
+    <wf wid="w_122" sent="9">eine</wf>
+    <wf wid="w_123" sent="9">autochthone</wf>
+    <wf wid="w_124" sent="9">Art</wf>
+    <wf wid="w_125" sent="9">Neuseelands</wf>
+    <wf wid="w_126" sent="9">und</wf>
+    <wf wid="w_127" sent="9">war</wf>
+    <wf wid="w_128" sent="9">auf</wf>
+    <wf wid="w_129" sent="9">dem</wf>
+    <wf wid="w_130" sent="9">Archipel</wf>
+    <wf wid="w_131" sent="9">bereits</wf>
+    <wf wid="w_132" sent="9">vor</wf>
+    <wf wid="w_133" sent="9">der</wf>
+    <wf wid="w_134" sent="9">Ankunft</wf>
+    <wf wid="w_135" sent="9">der</wf>
+    <wf wid="w_136" sent="9">Europäer</wf>
+    <wf wid="w_137" sent="9">heimisch</wf>
+    <wf wid="w_138" sent="9">.</wf>
+    <wf wid="w_139" sent="10">Er</wf>
+    <wf wid="w_140" sent="10">gilt</wf>
+    <wf wid="w_141" sent="10">als</wf>
+    <wf wid="w_142" sent="10">sehr</wf>
+    <wf wid="w_143" sent="10">selten</wf>
+    <wf wid="w_144" sent="10">und</wf>
+    <wf wid="w_145" sent="10">möglicherweise</wf>
+    <wf wid="w_146" sent="10">bedroht</wf>
+    <wf wid="w_147" sent="10">,</wf>
+    <wf wid="w_148" sent="10">wurde</wf>
+    <wf wid="w_149" sent="10">aber</wf>
+    <wf wid="w_150" sent="10">bislang</wf>
+    <wf wid="w_151" sent="10">noch</wf>
+    <wf wid="w_152" sent="10">nicht</wf>
+    <wf wid="w_153" sent="10">auf</wf>
+    <wf wid="w_154" sent="10">eine</wf>
+    <wf wid="w_155" sent="10">Rote</wf>
+    <wf wid="w_156" sent="10">Liste</wf>
+    <wf wid="w_157" sent="10">aufgenommen</wf>
+    <wf wid="w_158" sent="10">.</wf>
+  </text>
+  <terms>
+    <term lemma="Boletopsis" morphofeat="NE" pos="R" tid="t1" type="open">
+      <span>
+        <target id="w_1"/>
+      </span>
+    </term>
+    <term lemma="nothofagi" morphofeat="ADV" pos="A" tid="t2" type="open">
+      <span>
+        <target id="w_2"/>
+      </span>
+    </term>
+    <term lemma="ist" morphofeat="VAFIN" pos="V" tid="t3" type="open">
+      <span>
+        <target id="w_3"/>
+      </span>
+    </term>
+    <term lemma="eine" morphofeat="ART" pos="D" tid="t4" type="close">
+      <span>
+        <target id="w_4"/>
+      </span>
+    </term>
+    <term lemma="Ständerpilzart" morphofeat="NN" pos="N" tid="t5" type="open">
+      <span>
+        <target id="w_5"/>
+      </span>
+    </term>
+    <term lemma="aus" morphofeat="APPR" pos="P" tid="t6" type="close">
+      <span>
+        <target id="w_6"/>
+      </span>
+    </term>
+    <term lemma="der" morphofeat="ART" pos="D" tid="t7" type="close">
+      <span>
+        <target id="w_7"/>
+      </span>
+    </term>
+    <term lemma="Familie" morphofeat="NN" pos="N" tid="t8" type="open">
+      <span>
+        <target id="w_8"/>
+      </span>
+    </term>
+    <term lemma="der" morphofeat="ART" pos="D" tid="t9" type="close">
+      <span>
+        <target id="w_9"/>
+      </span>
+    </term>
+    <term lemma="Weißsporstachelingsverwandten" morphofeat="NN" pos="N" tid="t10" type="open">
+      <span>
+        <target id="w_10"/>
+      </span>
+    </term>
+    <term lemma="(" morphofeat="$(" pos="O" tid="t11" type="open">
+      <span>
+        <target id="w_11"/>
+      </span>
+    </term>
+    <term lemma="Bankeraceae" morphofeat="NN" pos="N" tid="t12" type="open">
+      <span>
+        <target id="w_12"/>
+      </span>
+    </term>
+    <term lemma=")" morphofeat="$(" pos="O" tid="t13" type="open">
+      <span>
+        <target id="w_13"/>
+      </span>
+    </term>
+    <term lemma="." morphofeat="$." pos="O" tid="t14" type="open">
+      <span>
+        <target id="w_14"/>
+      </span>
+    </term>
+    <term lemma="Der" morphofeat="ART" pos="D" tid="t15" type="close">
+      <span>
+        <target id="w_15"/>
+      </span>
+    </term>
+    <term lemma="Pilz" morphofeat="NN" pos="N" tid="t16" type="open">
+      <span>
+        <target id="w_16"/>
+      </span>
+    </term>
+    <term lemma="bildet" morphofeat="VVFIN" pos="V" tid="t17" type="open">
+      <span>
+        <target id="w_17"/>
+      </span>
+    </term>
+    <term lemma="graue" morphofeat="ADJA" pos="G" tid="t18" type="open">
+      <span>
+        <target id="w_18"/>
+      </span>
+    </term>
+    <term lemma="," morphofeat="$," pos="O" tid="t19" type="open">
+      <span>
+        <target id="w_19"/>
+      </span>
+    </term>
+    <term lemma="gestielte" morphofeat="ADJA" pos="G" tid="t20" type="open">
+      <span>
+        <target id="w_20"/>
+      </span>
+    </term>
+    <term lemma="Fruchtkörper" morphofeat="NN" pos="N" tid="t21" type="open">
+      <span>
+        <target id="w_21"/>
+      </span>
+    </term>
+    <term lemma="aus" morphofeat="PTKVZ" pos="V" tid="t22" type="open">
+      <span>
+        <target id="w_22"/>
+      </span>
+    </term>
+    <term lemma="," morphofeat="$," pos="O" tid="t23" type="open">
+      <span>
+        <target id="w_23"/>
+      </span>
+    </term>
+    <term lemma="die" morphofeat="PRELS" pos="Q" tid="t24" type="close">
+      <span>
+        <target id="w_24"/>
+      </span>
+    </term>
+    <term lemma="in" morphofeat="APPR" pos="P" tid="t25" type="close">
+      <span>
+        <target id="w_25"/>
+      </span>
+    </term>
+    <term lemma="Büscheln" morphofeat="NN" pos="N" tid="t26" type="open">
+      <span>
+        <target id="w_26"/>
+      </span>
+    </term>
+    <term lemma="wachsen" morphofeat="VVINF" pos="V" tid="t27" type="open">
+      <span>
+        <target id="w_27"/>
+      </span>
+    </term>
+    <term lemma="." morphofeat="$." pos="O" tid="t28" type="open">
+      <span>
+        <target id="w_28"/>
+      </span>
+    </term>
+    <term lemma="Wie" morphofeat="KOKOM" pos="C" tid="t29" type="close">
+      <span>
+        <target id="w_29"/>
+      </span>
+    </term>
+    <term lemma="alle" morphofeat="PIAT" pos="Q" tid="t30" type="close">
+      <span>
+        <target id="w_30"/>
+      </span>
+    </term>
+    <term lemma="Boletopsis-Arten" morphofeat="NN" pos="N" tid="t31" type="open">
+      <span>
+        <target id="w_31"/>
+      </span>
+    </term>
+    <term lemma="hat" morphofeat="VAFIN" pos="V" tid="t32" type="open">
+      <span>
+        <target id="w_32"/>
+      </span>
+    </term>
+    <term lemma="er" morphofeat="PPER" pos="Q" tid="t33" type="close">
+      <span>
+        <target id="w_33"/>
+      </span>
+    </term>
+    <term lemma="eine" morphofeat="ART" pos="D" tid="t34" type="close">
+      <span>
+        <target id="w_34"/>
+      </span>
+    </term>
+    <term lemma="porige" morphofeat="ADJA" pos="G" tid="t35" type="open">
+      <span>
+        <target id="w_35"/>
+      </span>
+    </term>
+    <term lemma="Fruchtschicht" morphofeat="NN" pos="N" tid="t36" type="open">
+      <span>
+        <target id="w_36"/>
+      </span>
+    </term>
+    <term lemma="." morphofeat="$." pos="O" tid="t37" type="open">
+      <span>
+        <target id="w_37"/>
+      </span>
+    </term>
+    <term lemma="Er" morphofeat="PPER" pos="Q" tid="t38" type="close">
+      <span>
+        <target id="w_38"/>
+      </span>
+    </term>
+    <term lemma="unterscheidet" morphofeat="VVFIN" pos="V" tid="t39" type="open">
+      <span>
+        <target id="w_39"/>
+      </span>
+    </term>
+    <term lemma="sich" morphofeat="PRF" pos="Q" tid="t40" type="close">
+      <span>
+        <target id="w_40"/>
+      </span>
+    </term>
+    <term lemma="von" morphofeat="APPR" pos="P" tid="t41" type="close">
+      <span>
+        <target id="w_41"/>
+      </span>
+    </term>
+    <term lemma="seinen" morphofeat="PPOSAT" pos="Q" tid="t42" type="close">
+      <span>
+        <target id="w_42"/>
+      </span>
+    </term>
+    <term lemma="Gattungsgenossen" morphofeat="NN" pos="N" tid="t43" type="open">
+      <span>
+        <target id="w_43"/>
+      </span>
+    </term>
+    <term lemma="unter" morphofeat="APPR" pos="P" tid="t44" type="close">
+      <span>
+        <target id="w_44"/>
+      </span>
+    </term>
+    <term lemma="anderem" morphofeat="PIS" pos="Q" tid="t45" type="close">
+      <span>
+        <target id="w_45"/>
+      </span>
+    </term>
+    <term lemma="durch" morphofeat="APPR" pos="P" tid="t46" type="close">
+      <span>
+        <target id="w_46"/>
+      </span>
+    </term>
+    <term lemma="taillierte" morphofeat="ADJA" pos="G" tid="t47" type="open">
+      <span>
+        <target id="w_47"/>
+      </span>
+    </term>
+    <term lemma="," morphofeat="$," pos="O" tid="t48" type="open">
+      <span>
+        <target id="w_48"/>
+      </span>
+    </term>
+    <term lemma="längliche" morphofeat="ADJA" pos="G" tid="t49" type="open">
+      <span>
+        <target id="w_49"/>
+      </span>
+    </term>
+    <term lemma="Sporen" morphofeat="NN" pos="N" tid="t50" type="open">
+      <span>
+        <target id="w_50"/>
+      </span>
+    </term>
+    <term lemma="und" morphofeat="KON" pos="C" tid="t51" type="close">
+      <span>
+        <target id="w_51"/>
+      </span>
+    </term>
+    <term lemma="eine" morphofeat="ART" pos="D" tid="t52" type="close">
+      <span>
+        <target id="w_52"/>
+      </span>
+    </term>
+    <term lemma="Grünverfärbung" morphofeat="NN" pos="N" tid="t53" type="open">
+      <span>
+        <target id="w_53"/>
+      </span>
+    </term>
+    <term lemma="als" morphofeat="APPR" pos="P" tid="t54" type="close">
+      <span>
+        <target id="w_54"/>
+      </span>
+    </term>
+    <term lemma="KOH-Reaktion" morphofeat="NN" pos="N" tid="t55" type="open">
+      <span>
+        <target id="w_55"/>
+      </span>
+    </term>
+    <term lemma="." morphofeat="$." pos="O" tid="t56" type="open">
+      <span>
+        <target id="w_56"/>
+      </span>
+    </term>
+    <term lemma="Boletopsis" morphofeat="NE" pos="R" tid="t57" type="open">
+      <span>
+        <target id="w_57"/>
+      </span>
+    </term>
+    <term lemma="nothofagi" morphofeat="ADV" pos="A" tid="t58" type="open">
+      <span>
+        <target id="w_58"/>
+      </span>
+    </term>
+    <term lemma="ist" morphofeat="VAFIN" pos="V" tid="t59" type="open">
+      <span>
+        <target id="w_59"/>
+      </span>
+    </term>
+    <term lemma="ein" morphofeat="ART" pos="D" tid="t60" type="close">
+      <span>
+        <target id="w_60"/>
+      </span>
+    </term>
+    <term lemma="neuseeländischer" morphofeat="ADJA" pos="G" tid="t61" type="open">
+      <span>
+        <target id="w_61"/>
+      </span>
+    </term>
+    <term lemma="Endemit" morphofeat="NN" pos="N" tid="t62" type="open">
+      <span>
+        <target id="w_62"/>
+      </span>
+    </term>
+    <term lemma="und" morphofeat="KON" pos="C" tid="t63" type="close">
+      <span>
+        <target id="w_63"/>
+      </span>
+    </term>
+    <term lemma="bildet" morphofeat="VVFIN" pos="V" tid="t64" type="open">
+      <span>
+        <target id="w_64"/>
+      </span>
+    </term>
+    <term lemma="Mykorrhiza" morphofeat="NE" pos="R" tid="t65" type="open">
+      <span>
+        <target id="w_65"/>
+      </span>
+    </term>
+    <term lemma="mit" morphofeat="APPR" pos="P" tid="t66" type="close">
+      <span>
+        <target id="w_66"/>
+      </span>
+    </term>
+    <term lemma="der" morphofeat="ART" pos="D" tid="t67" type="close">
+      <span>
+        <target id="w_67"/>
+      </span>
+    </term>
+    <term lemma="Scheinbuche" morphofeat="NN" pos="N" tid="t68" type="open">
+      <span>
+        <target id="w_68"/>
+      </span>
+    </term>
+    <term lemma="Nothofagus" morphofeat="NN" pos="N" tid="t69" type="open">
+      <span>
+        <target id="w_69"/>
+      </span>
+    </term>
+    <term lemma="fusca" morphofeat="VVINF" pos="V" tid="t70" type="open">
+      <span>
+        <target id="w_70"/>
+      </span>
+    </term>
+    <term lemma="." morphofeat="$." pos="O" tid="t71" type="open">
+      <span>
+        <target id="w_71"/>
+      </span>
+    </term>
+    <term lemma="Wann" morphofeat="PWAV" pos="Q" tid="t72" type="close">
+      <span>
+        <target id="w_72"/>
+      </span>
+    </term>
+    <term lemma="genau" morphofeat="ADJD" pos="G" tid="t73" type="open">
+      <span>
+        <target id="w_73"/>
+      </span>
+    </term>
+    <term lemma="der" morphofeat="ART" pos="D" tid="t74" type="close">
+      <span>
+        <target id="w_74"/>
+      </span>
+    </term>
+    <term lemma="Pilz" morphofeat="NN" pos="N" tid="t75" type="open">
+      <span>
+        <target id="w_75"/>
+      </span>
+    </term>
+    <term lemma="Fruchtkörper" morphofeat="NN" pos="N" tid="t76" type="open">
+      <span>
+        <target id="w_76"/>
+      </span>
+    </term>
+    <term lemma="ausbildet" morphofeat="VVFIN" pos="V" tid="t77" type="open">
+      <span>
+        <target id="w_77"/>
+      </span>
+    </term>
+    <term lemma="," morphofeat="$," pos="O" tid="t78" type="open">
+      <span>
+        <target id="w_78"/>
+      </span>
+    </term>
+    <term lemma="ist" morphofeat="VAFIN" pos="V" tid="t79" type="open">
+      <span>
+        <target id="w_79"/>
+      </span>
+    </term>
+    <term lemma="unbekannt" morphofeat="ADJD" pos="G" tid="t80" type="open">
+      <span>
+        <target id="w_80"/>
+      </span>
+    </term>
+    <term lemma="," morphofeat="$," pos="O" tid="t81" type="open">
+      <span>
+        <target id="w_81"/>
+      </span>
+    </term>
+    <term lemma="sie" morphofeat="PPER" pos="Q" tid="t82" type="close">
+      <span>
+        <target id="w_82"/>
+      </span>
+    </term>
+    <term lemma="wurden" morphofeat="VAFIN" pos="V" tid="t83" type="open">
+      <span>
+        <target id="w_83"/>
+      </span>
+    </term>
+    <term lemma="bislang" morphofeat="ADV" pos="A" tid="t84" type="open">
+      <span>
+        <target id="w_84"/>
+      </span>
+    </term>
+    <term lemma="stets" morphofeat="ADV" pos="A" tid="t85" type="open">
+      <span>
+        <target id="w_85"/>
+      </span>
+    </term>
+    <term lemma="im" morphofeat="APPRART" pos="P" tid="t86" type="close">
+      <span>
+        <target id="w_86"/>
+      </span>
+    </term>
+    <term lemma="Herbst" morphofeat="NN" pos="N" tid="t87" type="open">
+      <span>
+        <target id="w_87"/>
+      </span>
+    </term>
+    <term lemma="gefunden" morphofeat="VVPP" pos="V" tid="t88" type="open">
+      <span>
+        <target id="w_88"/>
+      </span>
+    </term>
+    <term lemma="." morphofeat="$." pos="O" tid="t89" type="open">
+      <span>
+        <target id="w_89"/>
+      </span>
+    </term>
+    <term lemma="Die" morphofeat="ART" pos="D" tid="t90" type="close">
+      <span>
+        <target id="w_90"/>
+      </span>
+    </term>
+    <term lemma="Erstbeschreibung" morphofeat="NN" pos="N" tid="t91" type="open">
+      <span>
+        <target id="w_91"/>
+      </span>
+    </term>
+    <term lemma="der" morphofeat="ART" pos="D" tid="t92" type="close">
+      <span>
+        <target id="w_92"/>
+      </span>
+    </term>
+    <term lemma="Art" morphofeat="NN" pos="N" tid="t93" type="open">
+      <span>
+        <target id="w_93"/>
+      </span>
+    </term>
+    <term lemma="von" morphofeat="APPR" pos="P" tid="t94" type="close">
+      <span>
+        <target id="w_94"/>
+      </span>
+    </term>
+    <term lemma="Jerry" morphofeat="NE" pos="R" tid="t95" type="open">
+      <span>
+        <target id="w_95"/>
+      </span>
+    </term>
+    <term lemma="Cooper" morphofeat="NE" pos="R" tid="t96" type="open">
+      <span>
+        <target id="w_96"/>
+      </span>
+    </term>
+    <term lemma="und" morphofeat="KON" pos="C" tid="t97" type="close">
+      <span>
+        <target id="w_97"/>
+      </span>
+    </term>
+    <term lemma="Patrick" morphofeat="NE" pos="R" tid="t98" type="open">
+      <span>
+        <target id="w_98"/>
+      </span>
+    </term>
+    <term lemma="Leonard" morphofeat="NE" pos="R" tid="t99" type="open">
+      <span>
+        <target id="w_99"/>
+      </span>
+    </term>
+    <term lemma="stammt" morphofeat="VVFIN" pos="V" tid="t100" type="open">
+      <span>
+        <target id="w_100"/>
+      </span>
+    </term>
+    <term lemma="aus" morphofeat="APPR" pos="P" tid="t101" type="close">
+      <span>
+        <target id="w_101"/>
+      </span>
+    </term>
+    <term lemma="dem" morphofeat="ART" pos="D" tid="t102" type="close">
+      <span>
+        <target id="w_102"/>
+      </span>
+    </term>
+    <term lemma="Jahr" morphofeat="NN" pos="N" tid="t103" type="open">
+      <span>
+        <target id="w_103"/>
+      </span>
+    </term>
+    <term lemma="2012." morphofeat="$." pos="O" tid="t104" type="open">
+      <span>
+        <target id="w_104"/>
+      </span>
+    </term>
+    <term lemma="Boletopsis" morphofeat="NE" pos="R" tid="t105" type="open">
+      <span>
+        <target id="w_105"/>
+      </span>
+    </term>
+    <term lemma="nothofagi" morphofeat="ADV" pos="A" tid="t106" type="open">
+      <span>
+        <target id="w_106"/>
+      </span>
+    </term>
+    <term lemma="ist" morphofeat="VAFIN" pos="V" tid="t107" type="open">
+      <span>
+        <target id="w_107"/>
+      </span>
+    </term>
+    <term lemma="DNA-Untersuchungen" morphofeat="NN" pos="N" tid="t108" type="open">
+      <span>
+        <target id="w_108"/>
+      </span>
+    </term>
+    <term lemma="zufolge" morphofeat="APPO" pos="P" tid="t109" type="close">
+      <span>
+        <target id="w_109"/>
+      </span>
+    </term>
+    <term lemma="ein" morphofeat="ART" pos="D" tid="t110" type="close">
+      <span>
+        <target id="w_110"/>
+      </span>
+    </term>
+    <term lemma="eher" morphofeat="ADV" pos="A" tid="t111" type="open">
+      <span>
+        <target id="w_111"/>
+      </span>
+    </term>
+    <term lemma="basaler" morphofeat="ADJA" pos="G" tid="t112" type="open">
+      <span>
+        <target id="w_112"/>
+      </span>
+    </term>
+    <term lemma="Vertreter" morphofeat="NN" pos="N" tid="t113" type="open">
+      <span>
+        <target id="w_113"/>
+      </span>
+    </term>
+    <term lemma="der" morphofeat="ART" pos="D" tid="t114" type="close">
+      <span>
+        <target id="w_114"/>
+      </span>
+    </term>
+    <term lemma="Gattung" morphofeat="NN" pos="N" tid="t115" type="open">
+      <span>
+        <target id="w_115"/>
+      </span>
+    </term>
+    <term lemma="Boletopsis" morphofeat="NE" pos="R" tid="t116" type="open">
+      <span>
+        <target id="w_116"/>
+      </span>
+    </term>
+    <term lemma="." morphofeat="$." pos="O" tid="t117" type="open">
+      <span>
+        <target id="w_117"/>
+      </span>
+    </term>
+    <term lemma="Wahrscheinlich" morphofeat="ADJD" pos="G" tid="t118" type="open">
+      <span>
+        <target id="w_118"/>
+      </span>
+    </term>
+    <term lemma="ist" morphofeat="VAFIN" pos="V" tid="t119" type="open">
+      <span>
+        <target id="w_119"/>
+      </span>
+    </term>
+    <term lemma="der" morphofeat="ART" pos="D" tid="t120" type="close">
+      <span>
+        <target id="w_120"/>
+      </span>
+    </term>
+    <term lemma="Pilz" morphofeat="NN" pos="N" tid="t121" type="open">
+      <span>
+        <target id="w_121"/>
+      </span>
+    </term>
+    <term lemma="eine" morphofeat="ART" pos="D" tid="t122" type="close">
+      <span>
+        <target id="w_122"/>
+      </span>
+    </term>
+    <term lemma="autochthone" morphofeat="ADJA" pos="G" tid="t123" type="open">
+      <span>
+        <target id="w_123"/>
+      </span>
+    </term>
+    <term lemma="Art" morphofeat="NN" pos="N" tid="t124" type="open">
+      <span>
+        <target id="w_124"/>
+      </span>
+    </term>
+    <term lemma="Neuseelands" morphofeat="NE" pos="R" tid="t125" type="open">
+      <span>
+        <target id="w_125"/>
+      </span>
+    </term>
+    <term lemma="und" morphofeat="KON" pos="C" tid="t126" type="close">
+      <span>
+        <target id="w_126"/>
+      </span>
+    </term>
+    <term lemma="war" morphofeat="VAFIN" pos="V" tid="t127" type="open">
+      <span>
+        <target id="w_127"/>
+      </span>
+    </term>
+    <term lemma="auf" morphofeat="APPR" pos="P" tid="t128" type="close">
+      <span>
+        <target id="w_128"/>
+      </span>
+    </term>
+    <term lemma="dem" morphofeat="ART" pos="D" tid="t129" type="close">
+      <span>
+        <target id="w_129"/>
+      </span>
+    </term>
+    <term lemma="Archipel" morphofeat="NN" pos="N" tid="t130" type="open">
+      <span>
+        <target id="w_130"/>
+      </span>
+    </term>
+    <term lemma="bereits" morphofeat="ADV" pos="A" tid="t131" type="open">
+      <span>
+        <target id="w_131"/>
+      </span>
+    </term>
+    <term lemma="vor" morphofeat="APPR" pos="P" tid="t132" type="close">
+      <span>
+        <target id="w_132"/>
+      </span>
+    </term>
+    <term lemma="der" morphofeat="ART" pos="D" tid="t133" type="close">
+      <span>
+        <target id="w_133"/>
+      </span>
+    </term>
+    <term lemma="Ankunft" morphofeat="NN" pos="N" tid="t134" type="open">
+      <span>
+        <target id="w_134"/>
+      </span>
+    </term>
+    <term lemma="der" morphofeat="ART" pos="D" tid="t135" type="close">
+      <span>
+        <target id="w_135"/>
+      </span>
+    </term>
+    <term lemma="Europäer" morphofeat="NN" pos="N" tid="t136" type="open">
+      <span>
+        <target id="w_136"/>
+      </span>
+    </term>
+    <term lemma="heimisch" morphofeat="ADJD" pos="G" tid="t137" type="open">
+      <span>
+        <target id="w_137"/>
+      </span>
+    </term>
+    <term lemma="." morphofeat="$." pos="O" tid="t138" type="open">
+      <span>
+        <target id="w_138"/>
+      </span>
+    </term>
+    <term lemma="Er" morphofeat="PPER" pos="Q" tid="t139" type="close">
+      <span>
+        <target id="w_139"/>
+      </span>
+    </term>
+    <term lemma="gilt" morphofeat="VVFIN" pos="V" tid="t140" type="open">
+      <span>
+        <target id="w_140"/>
+      </span>
+    </term>
+    <term lemma="als" morphofeat="APPR" pos="P" tid="t141" type="close">
+      <span>
+        <target id="w_141"/>
+      </span>
+    </term>
+    <term lemma="sehr" morphofeat="ADV" pos="A" tid="t142" type="open">
+      <span>
+        <target id="w_142"/>
+      </span>
+    </term>
+    <term lemma="selten" morphofeat="ADJD" pos="G" tid="t143" type="open">
+      <span>
+        <target id="w_143"/>
+      </span>
+    </term>
+    <term lemma="und" morphofeat="KON" pos="C" tid="t144" type="close">
+      <span>
+        <target id="w_144"/>
+      </span>
+    </term>
+    <term lemma="möglicherweise" morphofeat="ADV" pos="A" tid="t145" type="open">
+      <span>
+        <target id="w_145"/>
+      </span>
+    </term>
+    <term lemma="bedroht" morphofeat="VVPP" pos="V" tid="t146" type="open">
+      <span>
+        <target id="w_146"/>
+      </span>
+    </term>
+    <term lemma="," morphofeat="$," pos="O" tid="t147" type="open">
+      <span>
+        <target id="w_147"/>
+      </span>
+    </term>
+    <term lemma="wurde" morphofeat="VAFIN" pos="V" tid="t148" type="open">
+      <span>
+        <target id="w_148"/>
+      </span>
+    </term>
+    <term lemma="aber" morphofeat="ADV" pos="A" tid="t149" type="open">
+      <span>
+        <target id="w_149"/>
+      </span>
+    </term>
+    <term lemma="bislang" morphofeat="ADV" pos="A" tid="t150" type="open">
+      <span>
+        <target id="w_150"/>
+      </span>
+    </term>
+    <term lemma="noch" morphofeat="ADV" pos="A" tid="t151" type="open">
+      <span>
+        <target id="w_151"/>
+      </span>
+    </term>
+    <term lemma="nicht" morphofeat="PTKNEG" pos="O" tid="t152" type="open">
+      <span>
+        <target id="w_152"/>
+      </span>
+    </term>
+    <term lemma="auf" morphofeat="APPR" pos="P" tid="t153" type="close">
+      <span>
+        <target id="w_153"/>
+      </span>
+    </term>
+    <term lemma="eine" morphofeat="ART" pos="D" tid="t154" type="close">
+      <span>
+        <target id="w_154"/>
+      </span>
+    </term>
+    <term lemma="Rote" morphofeat="ADJA" pos="G" tid="t155" type="open">
+      <span>
+        <target id="w_155"/>
+      </span>
+    </term>
+    <term lemma="Liste" morphofeat="NN" pos="N" tid="t156" type="open">
+      <span>
+        <target id="w_156"/>
+      </span>
+    </term>
+    <term lemma="aufgenommen" morphofeat="VVPP" pos="V" tid="t157" type="open">
+      <span>
+        <target id="w_157"/>
+      </span>
+    </term>
+    <term lemma="." morphofeat="$." pos="O" tid="t158" type="open">
+      <span>
+        <target id="w_158"/>
+      </span>
+    </term>
+  </terms>
+</KAF>

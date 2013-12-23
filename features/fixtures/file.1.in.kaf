@@ -1,0 +1,172 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<KAF xml:lang="de">
+  <kafHeader>
+    <linguisticProcessors layer="text">
+      <lp timestamp="2013-04-26T11:35:19CEST" version="1.0" name="Open-nlp sentence splitter"/>
+      <lp timestamp="2013-04-26T11:35:19CEST" version="1.0" name="Open-nlp tokenizer"/>
+    </linguisticProcessors>
+    <linguisticProcessor layer="term">
+      <lp timestamp="2013-12-23T09:44:50CET" version="1.0" name="Open nlp pos tagger"/>
+    </linguisticProcessor>
+  </kafHeader>
+  <text>
+    <wf wid="w_1" sent="1">Belege</wf>
+    <wf wid="w_2" sent="1">über</wf>
+    <wf wid="w_3" sent="1">sein</wf>
+    <wf wid="w_4" sent="1">Leben</wf>
+    <wf wid="w_5" sent="1">sind</wf>
+    <wf wid="w_6" sent="1">das</wf>
+    <wf wid="w_7" sent="1">Neue</wf>
+    <wf wid="w_8" sent="1">Testament</wf>
+    <wf wid="w_9" sent="1">,</wf>
+    <wf wid="w_10" sent="1">insbesondere</wf>
+    <wf wid="w_11" sent="1">die</wf>
+    <wf wid="w_12" sent="1">Apostelgeschichte</wf>
+    <wf wid="w_13" sent="1">,</wf>
+    <wf wid="w_14" sent="1">und</wf>
+    <wf wid="w_15" sent="1">die</wf>
+    <wf wid="w_16" sent="1">Kirchenväter</wf>
+    <wf wid="w_17" sent="1">Papias</wf>
+    <wf wid="w_18" sent="1">,</wf>
+    <wf wid="w_19" sent="1">Eusebius</wf>
+    <wf wid="w_20" sent="1">von</wf>
+    <wf wid="w_21" sent="1">Caesarea</wf>
+    <wf wid="w_22" sent="1">,</wf>
+    <wf wid="w_23" sent="1">Hieronymus</wf>
+    <wf wid="w_24" sent="1">und</wf>
+    <wf wid="w_25" sent="1">Epiphanius</wf>
+    <wf wid="w_26" sent="1">.</wf>
+  </text>
+  <terms>
+    <term lemma="Belege" morphofeat="NN" pos="N" tid="t1" type="open">
+      <span>
+        <target id="w_1"/>
+      </span>
+    </term>
+    <term lemma="über" morphofeat="NN" pos="N" tid="t2" type="open">
+      <span>
+        <target id="w_2"/>
+      </span>
+    </term>
+    <term lemma="sein" morphofeat="PPOSAT" pos="Q" tid="t3" type="close">
+      <span>
+        <target id="w_3"/>
+      </span>
+    </term>
+    <term lemma="Leben" morphofeat="NN" pos="N" tid="t4" type="open">
+      <span>
+        <target id="w_4"/>
+      </span>
+    </term>
+    <term lemma="sind" morphofeat="VAFIN" pos="V" tid="t5" type="open">
+      <span>
+        <target id="w_5"/>
+      </span>
+    </term>
+    <term lemma="das" morphofeat="ART" pos="D" tid="t6" type="close">
+      <span>
+        <target id="w_6"/>
+      </span>
+    </term>
+    <term lemma="Neue" morphofeat="ADJA" pos="G" tid="t7" type="open">
+      <span>
+        <target id="w_7"/>
+      </span>
+    </term>
+    <term lemma="Testament" morphofeat="NN" pos="N" tid="t8" type="open">
+      <span>
+        <target id="w_8"/>
+      </span>
+    </term>
+    <term lemma="," morphofeat="$," pos="O" tid="t9" type="open">
+      <span>
+        <target id="w_9"/>
+      </span>
+    </term>
+    <term lemma="insbesondere" morphofeat="ADV" pos="A" tid="t10" type="open">
+      <span>
+        <target id="w_10"/>
+      </span>
+    </term>
+    <term lemma="die" morphofeat="ART" pos="D" tid="t11" type="close">
+      <span>
+        <target id="w_11"/>
+      </span>
+    </term>
+    <term lemma="Apostelgeschichte" morphofeat="NN" pos="N" tid="t12" type="open">
+      <span>
+        <target id="w_12"/>
+      </span>
+    </term>
+    <term lemma="," morphofeat="$," pos="O" tid="t13" type="open">
+      <span>
+        <target id="w_13"/>
+      </span>
+    </term>
+    <term lemma="und" morphofeat="KON" pos="C" tid="t14" type="close">
+      <span>
+        <target id="w_14"/>
+      </span>
+    </term>
+    <term lemma="die" morphofeat="ART" pos="D" tid="t15" type="close">
+      <span>
+        <target id="w_15"/>
+      </span>
+    </term>
+    <term lemma="Kirchenväter" morphofeat="NN" pos="N" tid="t16" type="open">
+      <span>
+        <target id="w_16"/>
+      </span>
+    </term>
+    <term lemma="Papias" morphofeat="NE" pos="R" tid="t17" type="open">
+      <span>
+        <target id="w_17"/>
+      </span>
+    </term>
+    <term lemma="," morphofeat="$," pos="O" tid="t18" type="open">
+      <span>
+        <target id="w_18"/>
+      </span>
+    </term>
+    <term lemma="Eusebius" morphofeat="NE" pos="R" tid="t19" type="open">
+      <span>
+        <target id="w_19"/>
+      </span>
+    </term>
+    <term lemma="von" morphofeat="APPR" pos="P" tid="t20" type="close">
+      <span>
+        <target id="w_20"/>
+      </span>
+    </term>
+    <term lemma="Caesarea" morphofeat="NE" pos="R" tid="t21" type="open">
+      <span>
+        <target id="w_21"/>
+      </span>
+    </term>
+    <term lemma="," morphofeat="$," pos="O" tid="t22" type="open">
+      <span>
+        <target id="w_22"/>
+      </span>
+    </term>
+    <term lemma="Hieronymus" morphofeat="NE" pos="R" tid="t23" type="open">
+      <span>
+        <target id="w_23"/>
+      </span>
+    </term>
+    <term lemma="und" morphofeat="KON" pos="C" tid="t24" type="close">
+      <span>
+        <target id="w_24"/>
+      </span>
+    </term>
+    <term lemma="Epiphanius" morphofeat="NE" pos="R" tid="t25" type="open">
+      <span>
+        <target id="w_25"/>
+      </span>
+    </term>
+    <term lemma="." morphofeat="$." pos="O" tid="t26" type="open">
+      <span>
+        <target id="w_26"/>
+      </span>
+    </term>
+  </terms>
+</KAF>

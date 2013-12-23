@@ -1,0 +1,410 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<KAF xml:lang="de">
+  <kafHeader>
+    <linguisticProcessors layer="text">
+      <lp timestamp="2013-04-26T11:35:19CEST" version="1.0" name="Open-nlp sentence splitter"/>
+      <lp timestamp="2013-04-26T11:35:19CEST" version="1.0" name="Open-nlp tokenizer"/>
+    </linguisticProcessors>
+    <linguisticProcessor layer="constituents">
+      <lp timestamp="*" version="1.0_23dec2013" name="Stanford German tigra trained constituency parser"/>
+    </linguisticProcessor>
+    <linguisticProcessor layer="term">
+      <lp timestamp="2013-12-23T09:44:50CET" version="1.0" name="Open nlp pos tagger"/>
+    </linguisticProcessor>
+  </kafHeader>
+  <text>
+    <wf wid="w_1" sent="1">Belege</wf>
+    <wf wid="w_2" sent="1">über</wf>
+    <wf wid="w_3" sent="1">sein</wf>
+    <wf wid="w_4" sent="1">Leben</wf>
+    <wf wid="w_5" sent="1">sind</wf>
+    <wf wid="w_6" sent="1">das</wf>
+    <wf wid="w_7" sent="1">Neue</wf>
+    <wf wid="w_8" sent="1">Testament</wf>
+    <wf wid="w_9" sent="1">,</wf>
+    <wf wid="w_10" sent="1">insbesondere</wf>
+    <wf wid="w_11" sent="1">die</wf>
+    <wf wid="w_12" sent="1">Apostelgeschichte</wf>
+    <wf wid="w_13" sent="1">,</wf>
+    <wf wid="w_14" sent="1">und</wf>
+    <wf wid="w_15" sent="1">die</wf>
+    <wf wid="w_16" sent="1">Kirchenväter</wf>
+    <wf wid="w_17" sent="1">Papias</wf>
+    <wf wid="w_18" sent="1">,</wf>
+    <wf wid="w_19" sent="1">Eusebius</wf>
+    <wf wid="w_20" sent="1">von</wf>
+    <wf wid="w_21" sent="1">Caesarea</wf>
+    <wf wid="w_22" sent="1">,</wf>
+    <wf wid="w_23" sent="1">Hieronymus</wf>
+    <wf wid="w_24" sent="1">und</wf>
+    <wf wid="w_25" sent="1">Epiphanius</wf>
+    <wf wid="w_26" sent="1">.</wf>
+  </text>
+  <terms>
+    <term lemma="Belege" morphofeat="NN" pos="N" tid="t1" type="open">
+      <span>
+        <target id="w_1"/>
+      </span>
+    </term>
+    <term lemma="über" morphofeat="NN" pos="N" tid="t2" type="open">
+      <span>
+        <target id="w_2"/>
+      </span>
+    </term>
+    <term lemma="sein" morphofeat="PPOSAT" pos="Q" tid="t3" type="close">
+      <span>
+        <target id="w_3"/>
+      </span>
+    </term>
+    <term lemma="Leben" morphofeat="NN" pos="N" tid="t4" type="open">
+      <span>
+        <target id="w_4"/>
+      </span>
+    </term>
+    <term lemma="sind" morphofeat="VAFIN" pos="V" tid="t5" type="open">
+      <span>
+        <target id="w_5"/>
+      </span>
+    </term>
+    <term lemma="das" morphofeat="ART" pos="D" tid="t6" type="close">
+      <span>
+        <target id="w_6"/>
+      </span>
+    </term>
+    <term lemma="Neue" morphofeat="ADJA" pos="G" tid="t7" type="open">
+      <span>
+        <target id="w_7"/>
+      </span>
+    </term>
+    <term lemma="Testament" morphofeat="NN" pos="N" tid="t8" type="open">
+      <span>
+        <target id="w_8"/>
+      </span>
+    </term>
+    <term lemma="," morphofeat="$," pos="O" tid="t9" type="open">
+      <span>
+        <target id="w_9"/>
+      </span>
+    </term>
+    <term lemma="insbesondere" morphofeat="ADV" pos="A" tid="t10" type="open">
+      <span>
+        <target id="w_10"/>
+      </span>
+    </term>
+    <term lemma="die" morphofeat="ART" pos="D" tid="t11" type="close">
+      <span>
+        <target id="w_11"/>
+      </span>
+    </term>
+    <term lemma="Apostelgeschichte" morphofeat="NN" pos="N" tid="t12" type="open">
+      <span>
+        <target id="w_12"/>
+      </span>
+    </term>
+    <term lemma="," morphofeat="$," pos="O" tid="t13" type="open">
+      <span>
+        <target id="w_13"/>
+      </span>
+    </term>
+    <term lemma="und" morphofeat="KON" pos="C" tid="t14" type="close">
+      <span>
+        <target id="w_14"/>
+      </span>
+    </term>
+    <term lemma="die" morphofeat="ART" pos="D" tid="t15" type="close">
+      <span>
+        <target id="w_15"/>
+      </span>
+    </term>
+    <term lemma="Kirchenväter" morphofeat="NN" pos="N" tid="t16" type="open">
+      <span>
+        <target id="w_16"/>
+      </span>
+    </term>
+    <term lemma="Papias" morphofeat="NE" pos="R" tid="t17" type="open">
+      <span>
+        <target id="w_17"/>
+      </span>
+    </term>
+    <term lemma="," morphofeat="$," pos="O" tid="t18" type="open">
+      <span>
+        <target id="w_18"/>
+      </span>
+    </term>
+    <term lemma="Eusebius" morphofeat="NE" pos="R" tid="t19" type="open">
+      <span>
+        <target id="w_19"/>
+      </span>
+    </term>
+    <term lemma="von" morphofeat="APPR" pos="P" tid="t20" type="close">
+      <span>
+        <target id="w_20"/>
+      </span>
+    </term>
+    <term lemma="Caesarea" morphofeat="NE" pos="R" tid="t21" type="open">
+      <span>
+        <target id="w_21"/>
+      </span>
+    </term>
+    <term lemma="," morphofeat="$," pos="O" tid="t22" type="open">
+      <span>
+        <target id="w_22"/>
+      </span>
+    </term>
+    <term lemma="Hieronymus" morphofeat="NE" pos="R" tid="t23" type="open">
+      <span>
+        <target id="w_23"/>
+      </span>
+    </term>
+    <term lemma="und" morphofeat="KON" pos="C" tid="t24" type="close">
+      <span>
+        <target id="w_24"/>
+      </span>
+    </term>
+    <term lemma="Epiphanius" morphofeat="NE" pos="R" tid="t25" type="open">
+      <span>
+        <target id="w_25"/>
+      </span>
+    </term>
+    <term lemma="." morphofeat="$." pos="O" tid="t26" type="open">
+      <span>
+        <target id="w_26"/>
+      </span>
+    </term>
+  </terms>
+  <constituents>
+    <tree>
+      <nt id="nter0" label="ROOT"/>
+      <nt id="nter1" label="ROOT"/>
+      <nt id="nter2" label="S"/>
+      <nt id="nter3" label="NP-SB"/>
+      <nt id="nter4" label="NN"/>
+      <nt id="nter5" label="PP"/>
+      <nt id="nter6" label="APPR"/>
+      <nt id="nter7" label="PPOSAT"/>
+      <nt id="nter8" label="NN"/>
+      <nt id="nter9" label="VAFIN"/>
+      <nt id="nter10" label="PDS-SB"/>
+      <nt id="nter11" label="CNP"/>
+      <nt id="nter12" label="NP"/>
+      <nt id="nter13" label="ADJA"/>
+      <nt id="nter14" label="NN"/>
+      <nt id="nter15" label="$,"/>
+      <nt id="nter16" label="NP"/>
+      <nt id="nter17" label="ADV"/>
+      <nt id="nter18" label="ART"/>
+      <nt id="nter19" label="NN"/>
+      <nt id="nter20" label="$,"/>
+      <nt id="nter21" label="KON"/>
+      <nt id="nter22" label="NP"/>
+      <nt id="nter23" label="ART"/>
+      <nt id="nter24" label="NN"/>
+      <nt id="nter25" label="CNP"/>
+      <nt id="nter26" label="NN"/>
+      <nt id="nter27" label="$,"/>
+      <nt id="nter28" label="NP"/>
+      <nt id="nter29" label="NN"/>
+      <nt id="nter30" label="PP"/>
+      <nt id="nter31" label="APPR"/>
+      <nt id="nter32" label="NN"/>
+      <nt id="nter33" label="$,"/>
+      <nt id="nter34" label="NN"/>
+      <nt id="nter35" label="KON"/>
+      <nt id="nter36" label="NN"/>
+      <nt id="nter37" label="$."/>
+      <t id="ter0">
+        <span>
+          <target id="t1"/>
+        </span>
+      </t>
+      <t id="ter1">
+        <span>
+          <target id="t2"/>
+        </span>
+      </t>
+      <t id="ter2">
+        <span>
+          <target id="t3"/>
+        </span>
+      </t>
+      <t id="ter3">
+        <span>
+          <target id="t4"/>
+        </span>
+      </t>
+      <t id="ter4">
+        <span>
+          <target id="t5"/>
+        </span>
+      </t>
+      <t id="ter5">
+        <span>
+          <target id="t6"/>
+        </span>
+      </t>
+      <t id="ter6">
+        <span>
+          <target id="t7"/>
+        </span>
+      </t>
+      <t id="ter7">
+        <span>
+          <target id="t8"/>
+        </span>
+      </t>
+      <t id="ter8">
+        <span>
+          <target id="t9"/>
+        </span>
+      </t>
+      <t id="ter9">
+        <span>
+          <target id="t10"/>
+        </span>
+      </t>
+      <t id="ter10">
+        <span>
+          <target id="t11"/>
+        </span>
+      </t>
+      <t id="ter11">
+        <span>
+          <target id="t12"/>
+        </span>
+      </t>
+      <t id="ter12">
+        <span>
+          <target id="t13"/>
+        </span>
+      </t>
+      <t id="ter13">
+        <span>
+          <target id="t14"/>
+        </span>
+      </t>
+      <t id="ter14">
+        <span>
+          <target id="t15"/>
+        </span>
+      </t>
+      <t id="ter15">
+        <span>
+          <target id="t16"/>
+        </span>
+      </t>
+      <t id="ter16">
+        <span>
+          <target id="t17"/>
+        </span>
+      </t>
+      <t id="ter17">
+        <span>
+          <target id="t18"/>
+        </span>
+      </t>
+      <t id="ter18">
+        <span>
+          <target id="t19"/>
+        </span>
+      </t>
+      <t id="ter19">
+        <span>
+          <target id="t20"/>
+        </span>
+      </t>
+      <t id="ter20">
+        <span>
+          <target id="t21"/>
+        </span>
+      </t>
+      <t id="ter21">
+        <span>
+          <target id="t22"/>
+        </span>
+      </t>
+      <t id="ter22">
+        <span>
+          <target id="t23"/>
+        </span>
+      </t>
+      <t id="ter23">
+        <span>
+          <target id="t24"/>
+        </span>
+      </t>
+      <t id="ter24">
+        <span>
+          <target id="t25"/>
+        </span>
+      </t>
+      <t id="ter25">
+        <span>
+          <target id="t26"/>
+        </span>
+      </t>
+      <edge from="nter1" id="tre0" to="nter0"/>
+      <edge from="ter0" id="tre1" to="nter4"/>
+      <edge from="nter4" id="tre2" to="nter3" head="yes"/>
+      <edge from="ter1" id="tre3" to="nter6"/>
+      <edge from="nter6" id="tre4" to="nter5" head="yes"/>
+      <edge from="ter2" id="tre5" to="nter7"/>
+      <edge from="nter7" id="tre6" to="nter5"/>
+      <edge from="ter3" id="tre7" to="nter8"/>
+      <edge from="nter8" id="tre8" to="nter5"/>
+      <edge from="nter5" id="tre9" to="nter3"/>
+      <edge from="nter3" id="tre10" to="nter2"/>
+      <edge from="ter4" id="tre11" to="nter9"/>
+      <edge from="nter9" id="tre12" to="nter2" head="yes"/>
+      <edge from="ter5" id="tre13" to="nter10"/>
+      <edge from="nter10" id="tre14" to="nter2"/>
+      <edge from="ter6" id="tre15" to="nter13"/>
+      <edge from="nter13" id="tre16" to="nter12"/>
+      <edge from="ter7" id="tre17" to="nter14"/>
+      <edge from="nter14" id="tre18" to="nter12" head="yes"/>
+      <edge from="nter12" id="tre19" to="nter11"/>
+      <edge from="ter8" id="tre20" to="nter15"/>
+      <edge from="nter15" id="tre21" to="nter11"/>
+      <edge from="ter9" id="tre22" to="nter17"/>
+      <edge from="nter17" id="tre23" to="nter16"/>
+      <edge from="ter10" id="tre24" to="nter18"/>
+      <edge from="nter18" id="tre25" to="nter16"/>
+      <edge from="ter11" id="tre26" to="nter19"/>
+      <edge from="nter19" id="tre27" to="nter16" head="yes"/>
+      <edge from="nter16" id="tre28" to="nter11"/>
+      <edge from="ter12" id="tre29" to="nter20"/>
+      <edge from="nter20" id="tre30" to="nter11"/>
+      <edge from="ter13" id="tre31" to="nter21"/>
+      <edge from="nter21" id="tre32" to="nter11"/>
+      <edge from="ter14" id="tre33" to="nter23"/>
+      <edge from="nter23" id="tre34" to="nter22"/>
+      <edge from="ter15" id="tre35" to="nter24"/>
+      <edge from="nter24" id="tre36" to="nter22" head="yes"/>
+      <edge from="ter16" id="tre37" to="nter26"/>
+      <edge from="nter26" id="tre38" to="nter25"/>
+      <edge from="ter17" id="tre39" to="nter27"/>
+      <edge from="nter27" id="tre40" to="nter25"/>
+      <edge from="ter18" id="tre41" to="nter29"/>
+      <edge from="nter29" id="tre42" to="nter28" head="yes"/>
+      <edge from="ter19" id="tre43" to="nter31"/>
+      <edge from="nter31" id="tre44" to="nter30" head="yes"/>
+      <edge from="ter20" id="tre45" to="nter32"/>
+      <edge from="nter32" id="tre46" to="nter30"/>
+      <edge from="nter30" id="tre47" to="nter28"/>
+      <edge from="nter28" id="tre48" to="nter25"/>
+      <edge from="ter21" id="tre49" to="nter33"/>
+      <edge from="nter33" id="tre50" to="nter25"/>
+      <edge from="ter22" id="tre51" to="nter34"/>
+      <edge from="nter34" id="tre52" to="nter25"/>
+      <edge from="ter23" id="tre53" to="nter35"/>
+      <edge from="nter35" id="tre54" to="nter25"/>
+      <edge from="ter24" id="tre55" to="nter36"/>
+      <edge from="nter36" id="tre56" to="nter25" head="yes"/>
+      <edge from="nter25" id="tre57" to="nter22"/>
+      <edge from="nter22" id="tre58" to="nter11" head="yes"/>
+      <edge from="nter11" id="tre59" to="nter2"/>
+      <edge from="ter25" id="tre60" to="nter37"/>
+      <edge from="nter37" id="tre61" to="nter2"/>
+      <edge from="nter2" id="tre62" to="nter1" head="yes"/>
+    </tree>
+  </constituents>
+</KAF>

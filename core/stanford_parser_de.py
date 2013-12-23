@@ -10,7 +10,15 @@ import shutil
 import glob
 import logging
 
+from convert_penn_to_kaf import convert_penn_to_kaf
 
+## Last changes
+# 23dec2013 --> adapted output to KAF
+
+this_name = 'Stanford German tigra trained constituency parser'
+version = '1.0'
+last_modified = '23dec2013'
+this_layer = 'constituents'
 __module_folder__ = os.path.dirname(__file__)
 
 # This updates the load path to ensure that the local site-packages directory
@@ -63,19 +71,34 @@ if lang != 'de':
   sys.exit(-1)
   
 logging.debug('Extracting sentences from the KAF')
+
+termid_for_token = {}
+for term in my_kaf.getTerms():
+    tokens_id = term.get_list_span()
+    for token_id in tokens_id:
+        termid_for_token[token_id] = term.getId()
+
 sentences = []
 current_sent = [] 
 previous_sent = None
+term_ids = []
+current_sent_tid = []
+
 for token,sent,token_id in my_kaf.getTokens():
   if sent != previous_sent and previous_sent!=None:
     sentences.append(current_sent)
     current_sent = [token]
+    
+    term_ids.append(current_sent_tid)
+    current_sent_tid = [termid_for_token[token_id]]
   else:
     current_sent.append(token)
+    current_sent_tid.append(termid_for_token[token_id])
   previous_sent = sent
   
 if len(current_sent) !=0:
   sentences.append(current_sent)
+  term_ids.append(current_sent_tid)
   
  
 logging.debug('Calling to Stanford parser for GERMAN in '+STANFORD_HOME)
@@ -98,10 +121,18 @@ cmd+=' '+tmp_file.name
 stanford_process = Popen(cmd,stdout=PIPE,stderr=PIPE,shell=True)
 code = stanford_process.wait()
 logging.debug('Stanford parser finished with code:'+str(code))
-stanford_output = stanford_process.stdout.read()
-stanford_error = stanford_process.stderr.read()
+stanford_output, stanford_error  = stanford_process.communicate()
 logging.debug('STANFORD LOG: '+ stanford_error)
-print stanford_output.strip()
+
+const = etree.Element('constituents')
+for num_sent, str_tree in enumerate(stanford_output.splitlines()):
+    list_term_ids_for_sentence = term_ids[num_sent]
+    tree_obj = convert_penn_to_kaf(str_tree,list_term_ids_for_sentence)
+    const.append(tree_obj)
+
+my_kaf.tree.getroot().append(const)
+my_kaf.addLinguisticProcessor(this_name, version+'_'+last_modified, this_layer, my_time_stamp)
+my_kaf.saveToFile(sys.stdout)
 
 os.remove(tmp_file.name)
 sys.exit(0)
