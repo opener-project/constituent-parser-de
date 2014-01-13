@@ -124,7 +124,7 @@ logging.debug('Stanford parser finished with code:'+str(code))
 stanford_output, stanford_error  = stanford_process.communicate()
 logging.debug('STANFORD LOG: '+ stanford_error)
 
-const = etree.Element('constituents')
+const = etree.Element('constituency')
 for num_sent, str_tree in enumerate(stanford_output.splitlines()):
     list_term_ids_for_sentence = term_ids[num_sent]
     tree_obj = convert_penn_to_kaf(str_tree,list_term_ids_for_sentence)
