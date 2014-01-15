@@ -15,7 +15,7 @@ from convert_penn_to_kaf import convert_penn_to_kaf
 ## Last changes
 # 23dec2013 --> adapted output to KAF
 
-this_name = 'Stanford German tigra trained constituency parser'
+this_name = 'Stanford German constituency parser trained on NEGRA corpus'
 version = '1.0'
 last_modified = '23dec2013'
 this_layer = 'constituents'
@@ -34,7 +34,7 @@ from lxml import etree
 STANFORD_HOME=os.path.join(__module_folder__,'vendor','stanford-parser')
 STANFORD_MEM="3g"
 STANFORD_GERMAN_OPTS='-hMarkov 1 -vMarkov 2 -vSelSplitCutOff 300 -uwm 1 -unknownSuffixSize 2 -nodeCleanup 2 -encoding UTF-8'
-STANFORD_PARSER_OPTS='-tokenized'
+STANFORD_PARSER_OPTS='-tokenized -escaper edu.stanford.nlp.process.PTBEscapingProcessor '
 STANDFORD_GRAMMAR='edu/stanford/nlp/models/lexparser/germanPCFG.ser.gz'
 ##########################################
 

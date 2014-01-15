@@ -23,7 +23,7 @@ def convert_penn_to_kaf(tree_str,term_ids):
     global NOTER, TER, EDGE, noter_cnt,ter_cnt,edge_cnt
 
     this_tree = Tree(tree_str)
-    
+   
     for num, token in enumerate(this_tree.leaves()):
         position = this_tree.leaf_treeposition(num)
         token_id = term_ids[num]
@@ -31,18 +31,21 @@ def convert_penn_to_kaf(tree_str,term_ids):
     
 
     ## TO include a root node
-    my_noter_root_id = 'nter'+str(noter_cnt)
-    noter_cnt+=1
-    my_edge_root_id = 'tre'+str(edge_cnt)
-    edge_cnt+=1
+    include_extra_root = False
+    if include_extra_root:
+        my_noter_root_id = 'nter'+str(noter_cnt)
+        noter_cnt+=1
+        my_edge_root_id = 'tre'+str(edge_cnt)
+        edge_cnt+=1
     
     linking_id, nodes = generate_nodes(this_tree)
     
     ## TO include a root node
-    my_noter  = (NOTER,my_noter_root_id,'ROOT')
-    my_edge = (EDGE,my_edge_root_id,my_noter_root_id,linking_id)
-    nodes.insert(0,my_noter)
-    nodes.insert(0,my_edge)
+    if include_extra_root:
+        my_noter  = (NOTER,my_noter_root_id,'ROOT')
+        my_edge = (EDGE,my_edge_root_id,my_noter_root_id,linking_id)
+        nodes.insert(0,my_noter)
+        nodes.insert(0,my_edge)
     
     
    
