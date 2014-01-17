@@ -6,7 +6,7 @@
       <lp timestamp="2013-04-26T12:03:36CEST" version="1.0" name="Open-nlp tokenizer"/>
     </linguisticProcessors>
     <linguisticProcessor layer="constituents">
-      <lp timestamp="*" version="1.1_17jan2014" name="Stanford German constituency parser trained on NEGRA corpus"/>
+      <lp timestamp="*" version="1.2_17jan2014" name="Stanford German constituency parser trained on NEGRA corpus"/>
     </linguisticProcessor>
     <linguisticProcessor layer="term">
       <lp timestamp="2013-12-23T09:47:35CET" version="1.0" name="Open nlp pos tagger"/>
@@ -1059,75 +1059,75 @@
         </span>
       </t>
       <!--  tre0  ROOT <- ROOT -->
-      <edge from="nter0" id="tre0" to="nter1"/>
+      <edge from="nter1" id="tre0" to="nter0"/>
       <!--  tre1  ROOT <- S -->
-      <edge from="nter1" id="tre1" to="nter2"/>
+      <edge from="nter2" id="tre1" to="nter1" head="yes"/>
       <!--  tre2  S <- VP -->
-      <edge from="nter2" id="tre2" to="nter3" head="yes"/>
+      <edge from="nter3" id="tre2" to="nter2"/>
       <!--  tre3  VP <- NN-OA -->
-      <edge from="nter3" id="tre3" to="nter4"/>
+      <edge from="nter4" id="tre3" to="nter3"/>
       <!--  tre4  NN-OA <- Boletopsis -->
-      <edge from="nter4" id="tre4" to="ter0"/>
+      <edge from="ter0" id="tre4" to="nter4"/>
       <!--  tre5  VP <- VVPP -->
-      <edge from="nter3" id="tre5" to="nter5"/>
+      <edge from="nter5" id="tre5" to="nter3" head="yes"/>
       <!--  tre6  VVPP <- nothofagi -->
-      <edge from="nter5" id="tre6" to="ter1" head="yes"/>
+      <edge from="ter1" id="tre6" to="nter5"/>
       <!--  tre7  S <- VAFIN -->
-      <edge from="nter2" id="tre7" to="nter6" head="yes"/>
+      <edge from="nter6" id="tre7" to="nter2" head="yes"/>
       <!--  tre8  VAFIN <- ist -->
-      <edge from="nter6" id="tre8" to="ter2" head="yes"/>
+      <edge from="ter2" id="tre8" to="nter6"/>
       <!--  tre9  S <- NP -->
-      <edge from="nter2" id="tre9" to="nter7" head="yes"/>
+      <edge from="nter7" id="tre9" to="nter2"/>
       <!--  tre10  NP <- ART -->
-      <edge from="nter7" id="tre10" to="nter8"/>
+      <edge from="nter8" id="tre10" to="nter7"/>
       <!--  tre11  ART <- eine -->
-      <edge from="nter8" id="tre11" to="ter3"/>
+      <edge from="ter3" id="tre11" to="nter8"/>
       <!--  tre12  NP <- NN -->
-      <edge from="nter7" id="tre12" to="nter9"/>
+      <edge from="nter9" id="tre12" to="nter7" head="yes"/>
       <!--  tre13  NN <- Ständerpilzart -->
-      <edge from="nter9" id="tre13" to="ter4" head="yes"/>
+      <edge from="ter4" id="tre13" to="nter9"/>
       <!--  tre14  NP <- PP -->
-      <edge from="nter7" id="tre14" to="nter10"/>
+      <edge from="nter10" id="tre14" to="nter7"/>
       <!--  tre15  PP <- APPR -->
-      <edge from="nter10" id="tre15" to="nter11"/>
+      <edge from="nter11" id="tre15" to="nter10" head="yes"/>
       <!--  tre16  APPR <- aus -->
-      <edge from="nter11" id="tre16" to="ter5" head="yes"/>
+      <edge from="ter5" id="tre16" to="nter11"/>
       <!--  tre17  PP <- ART -->
-      <edge from="nter10" id="tre17" to="nter12"/>
+      <edge from="nter12" id="tre17" to="nter10"/>
       <!--  tre18  ART <- der -->
-      <edge from="nter12" id="tre18" to="ter6"/>
+      <edge from="ter6" id="tre18" to="nter12"/>
       <!--  tre19  PP <- NN -->
-      <edge from="nter10" id="tre19" to="nter13"/>
+      <edge from="nter13" id="tre19" to="nter10"/>
       <!--  tre20  NN <- Familie -->
-      <edge from="nter13" id="tre20" to="ter7"/>
+      <edge from="ter7" id="tre20" to="nter13"/>
       <!--  tre21  PP <- NP -->
-      <edge from="nter10" id="tre21" to="nter14"/>
+      <edge from="nter14" id="tre21" to="nter10"/>
       <!--  tre22  NP <- ART -->
-      <edge from="nter14" id="tre22" to="nter15"/>
+      <edge from="nter15" id="tre22" to="nter14"/>
       <!--  tre23  ART <- der -->
-      <edge from="nter15" id="tre23" to="ter8"/>
+      <edge from="ter8" id="tre23" to="nter15"/>
       <!--  tre24  NP <- NN -->
-      <edge from="nter14" id="tre24" to="nter16"/>
+      <edge from="nter16" id="tre24" to="nter14" head="yes"/>
       <!--  tre25  NN <- Weißsporstachelingsverwandten -->
-      <edge from="nter16" id="tre25" to="ter9" head="yes"/>
+      <edge from="ter9" id="tre25" to="nter16"/>
       <!--  tre26  NP <- MPN -->
-      <edge from="nter14" id="tre26" to="nter17"/>
+      <edge from="nter17" id="tre26" to="nter14"/>
       <!--  tre27  MPN <- FM -->
-      <edge from="nter17" id="tre27" to="nter18"/>
+      <edge from="nter18" id="tre27" to="nter17"/>
       <!--  tre28  FM <- ( -->
-      <edge from="nter18" id="tre28" to="ter10"/>
+      <edge from="ter10" id="tre28" to="nter18"/>
       <!--  tre29  MPN <- FM -->
-      <edge from="nter17" id="tre29" to="nter19"/>
+      <edge from="nter19" id="tre29" to="nter17"/>
       <!--  tre30  FM <- Bankeraceae -->
-      <edge from="nter19" id="tre30" to="ter11"/>
+      <edge from="ter11" id="tre30" to="nter19"/>
       <!--  tre31  MPN <- FM -->
-      <edge from="nter17" id="tre31" to="nter20"/>
+      <edge from="nter20" id="tre31" to="nter17" head="yes"/>
       <!--  tre32  FM <- ) -->
-      <edge from="nter20" id="tre32" to="ter12" head="yes"/>
+      <edge from="ter12" id="tre32" to="nter20"/>
       <!--  tre33  S <- $. -->
-      <edge from="nter2" id="tre33" to="nter21" head="yes"/>
+      <edge from="nter21" id="tre33" to="nter2"/>
       <!--  tre34  $. <- . -->
-      <edge from="nter21" id="tre34" to="ter13"/>
+      <edge from="ter13" id="tre34" to="nter21"/>
     </tree>
     <tree>
       <nt id="nter0" label="ROOT"/>
@@ -1222,73 +1222,73 @@
         </span>
       </t>
       <!--  tre0  ROOT <- ROOT -->
-      <edge from="nter0" id="tre0" to="nter1"/>
+      <edge from="nter1" id="tre0" to="nter0"/>
       <!--  tre1  ROOT <- S -->
-      <edge from="nter1" id="tre1" to="nter2"/>
+      <edge from="nter2" id="tre1" to="nter1" head="yes"/>
       <!--  tre2  S <- NP-SB -->
-      <edge from="nter2" id="tre2" to="nter3" head="yes"/>
+      <edge from="nter3" id="tre2" to="nter2"/>
       <!--  tre3  NP-SB <- ART -->
-      <edge from="nter3" id="tre3" to="nter4"/>
+      <edge from="nter4" id="tre3" to="nter3"/>
       <!--  tre4  ART <- Der -->
-      <edge from="nter4" id="tre4" to="ter0"/>
+      <edge from="ter0" id="tre4" to="nter4"/>
       <!--  tre5  NP-SB <- NE -->
-      <edge from="nter3" id="tre5" to="nter5"/>
+      <edge from="nter5" id="tre5" to="nter3" head="yes"/>
       <!--  tre6  NE <- Pilz -->
-      <edge from="nter5" id="tre6" to="ter1" head="yes"/>
+      <edge from="ter1" id="tre6" to="nter5"/>
       <!--  tre7  S <- VVFIN -->
-      <edge from="nter2" id="tre7" to="nter6" head="yes"/>
+      <edge from="nter6" id="tre7" to="nter2" head="yes"/>
       <!--  tre8  VVFIN <- bildet -->
-      <edge from="nter6" id="tre8" to="ter2" head="yes"/>
+      <edge from="ter2" id="tre8" to="nter6"/>
       <!--  tre9  S <- ADV -->
-      <edge from="nter2" id="tre9" to="nter7" head="yes"/>
+      <edge from="nter7" id="tre9" to="nter2"/>
       <!--  tre10  ADV <- graue -->
-      <edge from="nter7" id="tre10" to="ter3"/>
+      <edge from="ter3" id="tre10" to="nter7"/>
       <!--  tre11  S <- $, -->
-      <edge from="nter2" id="tre11" to="nter8" head="yes"/>
+      <edge from="nter8" id="tre11" to="nter2"/>
       <!--  tre12  $, <- , -->
-      <edge from="nter8" id="tre12" to="ter4"/>
+      <edge from="ter4" id="tre12" to="nter8"/>
       <!--  tre13  S <- NP-OA -->
-      <edge from="nter2" id="tre13" to="nter9" head="yes"/>
+      <edge from="nter9" id="tre13" to="nter2"/>
       <!--  tre14  NP-OA <- ADJA -->
-      <edge from="nter9" id="tre14" to="nter10"/>
+      <edge from="nter10" id="tre14" to="nter9"/>
       <!--  tre15  ADJA <- gestielte -->
-      <edge from="nter10" id="tre15" to="ter5"/>
+      <edge from="ter5" id="tre15" to="nter10"/>
       <!--  tre16  NP-OA <- NN -->
-      <edge from="nter9" id="tre16" to="nter11"/>
+      <edge from="nter11" id="tre16" to="nter9" head="yes"/>
       <!--  tre17  NN <- Fruchtkörper -->
-      <edge from="nter11" id="tre17" to="ter6" head="yes"/>
+      <edge from="ter6" id="tre17" to="nter11"/>
       <!--  tre18  S <- PTKVZ -->
-      <edge from="nter2" id="tre18" to="nter12" head="yes"/>
+      <edge from="nter12" id="tre18" to="nter2"/>
       <!--  tre19  PTKVZ <- aus -->
-      <edge from="nter12" id="tre19" to="ter7"/>
+      <edge from="ter7" id="tre19" to="nter12"/>
       <!--  tre20  S <- $, -->
-      <edge from="nter2" id="tre20" to="nter13" head="yes"/>
+      <edge from="nter13" id="tre20" to="nter2"/>
       <!--  tre21  $, <- , -->
-      <edge from="nter13" id="tre21" to="ter8"/>
+      <edge from="ter8" id="tre21" to="nter13"/>
       <!--  tre22  S <- S -->
-      <edge from="nter2" id="tre22" to="nter14" head="yes"/>
+      <edge from="nter14" id="tre22" to="nter2"/>
       <!--  tre23  S <- PRELS-SB -->
-      <edge from="nter14" id="tre23" to="nter15"/>
+      <edge from="nter15" id="tre23" to="nter14"/>
       <!--  tre24  PRELS-SB <- die -->
-      <edge from="nter15" id="tre24" to="ter9"/>
+      <edge from="ter9" id="tre24" to="nter15"/>
       <!--  tre25  S <- PP -->
-      <edge from="nter14" id="tre25" to="nter16"/>
+      <edge from="nter16" id="tre25" to="nter14"/>
       <!--  tre26  PP <- APPR -->
-      <edge from="nter16" id="tre26" to="nter17"/>
+      <edge from="nter17" id="tre26" to="nter16" head="yes"/>
       <!--  tre27  APPR <- in -->
-      <edge from="nter17" id="tre27" to="ter10" head="yes"/>
+      <edge from="ter10" id="tre27" to="nter17"/>
       <!--  tre28  PP <- NN -->
-      <edge from="nter16" id="tre28" to="nter18"/>
+      <edge from="nter18" id="tre28" to="nter16"/>
       <!--  tre29  NN <- Büscheln -->
-      <edge from="nter18" id="tre29" to="ter11"/>
+      <edge from="ter11" id="tre29" to="nter18"/>
       <!--  tre30  S <- VVFIN -->
-      <edge from="nter14" id="tre30" to="nter19"/>
+      <edge from="nter19" id="tre30" to="nter14" head="yes"/>
       <!--  tre31  VVFIN <- wachsen -->
-      <edge from="nter19" id="tre31" to="ter12" head="yes"/>
+      <edge from="ter12" id="tre31" to="nter19"/>
       <!--  tre32  S <- $. -->
-      <edge from="nter2" id="tre32" to="nter20" head="yes"/>
+      <edge from="nter20" id="tre32" to="nter2"/>
       <!--  tre33  $. <- . -->
-      <edge from="nter20" id="tre33" to="ter13"/>
+      <edge from="ter13" id="tre33" to="nter20"/>
     </tree>
     <tree>
       <nt id="nter0" label="ROOT"/>
@@ -1352,51 +1352,51 @@
         </span>
       </t>
       <!--  tre0  ROOT <- ROOT -->
-      <edge from="nter0" id="tre0" to="nter1"/>
+      <edge from="nter1" id="tre0" to="nter0"/>
       <!--  tre1  ROOT <- S -->
-      <edge from="nter1" id="tre1" to="nter2"/>
+      <edge from="nter2" id="tre1" to="nter1" head="yes"/>
       <!--  tre2  S <- NP-SB -->
-      <edge from="nter2" id="tre2" to="nter3" head="yes"/>
+      <edge from="nter3" id="tre2" to="nter2"/>
       <!--  tre3  NP-SB <- AP -->
-      <edge from="nter3" id="tre3" to="nter4"/>
+      <edge from="nter4" id="tre3" to="nter3"/>
       <!--  tre4  AP <- PWAV -->
-      <edge from="nter4" id="tre4" to="nter5"/>
+      <edge from="nter5" id="tre4" to="nter4"/>
       <!--  tre5  PWAV <- Wie -->
-      <edge from="nter5" id="tre5" to="ter0"/>
+      <edge from="ter0" id="tre5" to="nter5"/>
       <!--  tre6  AP <- PIDAT -->
-      <edge from="nter4" id="tre6" to="nter6"/>
+      <edge from="nter6" id="tre6" to="nter4" head="yes"/>
       <!--  tre7  PIDAT <- alle -->
-      <edge from="nter6" id="tre7" to="ter1" head="yes"/>
+      <edge from="ter1" id="tre7" to="nter6"/>
       <!--  tre8  NP-SB <- NN -->
-      <edge from="nter3" id="tre8" to="nter7"/>
+      <edge from="nter7" id="tre8" to="nter3" head="yes"/>
       <!--  tre9  NN <- Boletopsis-Arten -->
-      <edge from="nter7" id="tre9" to="ter2" head="yes"/>
+      <edge from="ter2" id="tre9" to="nter7"/>
       <!--  tre10  S <- VAFIN -->
-      <edge from="nter2" id="tre10" to="nter8" head="yes"/>
+      <edge from="nter8" id="tre10" to="nter2" head="yes"/>
       <!--  tre11  VAFIN <- hat -->
-      <edge from="nter8" id="tre11" to="ter3" head="yes"/>
+      <edge from="ter3" id="tre11" to="nter8"/>
       <!--  tre12  S <- PPER-SB -->
-      <edge from="nter2" id="tre12" to="nter9" head="yes"/>
+      <edge from="nter9" id="tre12" to="nter2"/>
       <!--  tre13  PPER-SB <- er -->
-      <edge from="nter9" id="tre13" to="ter4"/>
+      <edge from="ter4" id="tre13" to="nter9"/>
       <!--  tre14  S <- NP -->
-      <edge from="nter2" id="tre14" to="nter10" head="yes"/>
+      <edge from="nter10" id="tre14" to="nter2"/>
       <!--  tre15  NP <- ART -->
-      <edge from="nter10" id="tre15" to="nter11"/>
+      <edge from="nter11" id="tre15" to="nter10"/>
       <!--  tre16  ART <- eine -->
-      <edge from="nter11" id="tre16" to="ter5"/>
+      <edge from="ter5" id="tre16" to="nter11"/>
       <!--  tre17  NP <- ADJA -->
-      <edge from="nter10" id="tre17" to="nter12"/>
+      <edge from="nter12" id="tre17" to="nter10"/>
       <!--  tre18  ADJA <- porige -->
-      <edge from="nter12" id="tre18" to="ter6"/>
+      <edge from="ter6" id="tre18" to="nter12"/>
       <!--  tre19  NP <- NN -->
-      <edge from="nter10" id="tre19" to="nter13"/>
+      <edge from="nter13" id="tre19" to="nter10" head="yes"/>
       <!--  tre20  NN <- Fruchtschicht -->
-      <edge from="nter13" id="tre20" to="ter7" head="yes"/>
+      <edge from="ter7" id="tre20" to="nter13"/>
       <!--  tre21  S <- $. -->
-      <edge from="nter2" id="tre21" to="nter14" head="yes"/>
+      <edge from="nter14" id="tre21" to="nter2"/>
       <!--  tre22  $. <- . -->
-      <edge from="nter14" id="tre22" to="ter8"/>
+      <edge from="ter8" id="tre22" to="nter14"/>
     </tree>
     <tree>
       <nt id="nter0" label="ROOT"/>
@@ -1524,99 +1524,99 @@
         </span>
       </t>
       <!--  tre0  ROOT <- ROOT -->
-      <edge from="nter0" id="tre0" to="nter1"/>
+      <edge from="nter1" id="tre0" to="nter0"/>
       <!--  tre1  ROOT <- S -->
-      <edge from="nter1" id="tre1" to="nter2"/>
+      <edge from="nter2" id="tre1" to="nter1" head="yes"/>
       <!--  tre2  S <- PPER-SB -->
-      <edge from="nter2" id="tre2" to="nter3" head="yes"/>
+      <edge from="nter3" id="tre2" to="nter2"/>
       <!--  tre3  PPER-SB <- Er -->
-      <edge from="nter3" id="tre3" to="ter0"/>
+      <edge from="ter0" id="tre3" to="nter3"/>
       <!--  tre4  S <- VVFIN -->
-      <edge from="nter2" id="tre4" to="nter4" head="yes"/>
+      <edge from="nter4" id="tre4" to="nter2" head="yes"/>
       <!--  tre5  VVFIN <- unterscheidet -->
-      <edge from="nter4" id="tre5" to="ter1" head="yes"/>
+      <edge from="ter1" id="tre5" to="nter4"/>
       <!--  tre6  S <- PRF-OA -->
-      <edge from="nter2" id="tre6" to="nter5" head="yes"/>
+      <edge from="nter5" id="tre6" to="nter2"/>
       <!--  tre7  PRF-OA <- sich -->
-      <edge from="nter5" id="tre7" to="ter2"/>
+      <edge from="ter2" id="tre7" to="nter5"/>
       <!--  tre8  S <- PP -->
-      <edge from="nter2" id="tre8" to="nter6" head="yes"/>
+      <edge from="nter6" id="tre8" to="nter2"/>
       <!--  tre9  PP <- APPR -->
-      <edge from="nter6" id="tre9" to="nter7"/>
+      <edge from="nter7" id="tre9" to="nter6" head="yes"/>
       <!--  tre10  APPR <- von -->
-      <edge from="nter7" id="tre10" to="ter3" head="yes"/>
+      <edge from="ter3" id="tre10" to="nter7"/>
       <!--  tre11  PP <- PPOSAT -->
-      <edge from="nter6" id="tre11" to="nter8"/>
+      <edge from="nter8" id="tre11" to="nter6"/>
       <!--  tre12  PPOSAT <- seinen -->
-      <edge from="nter8" id="tre12" to="ter4"/>
+      <edge from="ter4" id="tre12" to="nter8"/>
       <!--  tre13  PP <- NN -->
-      <edge from="nter6" id="tre13" to="nter9"/>
+      <edge from="nter9" id="tre13" to="nter6"/>
       <!--  tre14  NN <- Gattungsgenossen -->
-      <edge from="nter9" id="tre14" to="ter5"/>
+      <edge from="ter5" id="tre14" to="nter9"/>
       <!--  tre15  PP <- PP -->
-      <edge from="nter6" id="tre15" to="nter10"/>
+      <edge from="nter10" id="tre15" to="nter6"/>
       <!--  tre16  PP <- APPR -->
-      <edge from="nter10" id="tre16" to="nter11"/>
+      <edge from="nter11" id="tre16" to="nter10" head="yes"/>
       <!--  tre17  APPR <- unter -->
-      <edge from="nter11" id="tre17" to="ter6" head="yes"/>
+      <edge from="ter6" id="tre17" to="nter11"/>
       <!--  tre18  PP <- PIS -->
-      <edge from="nter10" id="tre18" to="nter12"/>
+      <edge from="nter12" id="tre18" to="nter10"/>
       <!--  tre19  PIS <- anderem -->
-      <edge from="nter12" id="tre19" to="ter7"/>
+      <edge from="ter7" id="tre19" to="nter12"/>
       <!--  tre20  PP <- PP -->
-      <edge from="nter6" id="tre20" to="nter13"/>
+      <edge from="nter13" id="tre20" to="nter6"/>
       <!--  tre21  PP <- APPR -->
-      <edge from="nter13" id="tre21" to="nter14"/>
+      <edge from="nter14" id="tre21" to="nter13" head="yes"/>
       <!--  tre22  APPR <- durch -->
-      <edge from="nter14" id="tre22" to="ter8" head="yes"/>
+      <edge from="ter8" id="tre22" to="nter14"/>
       <!--  tre23  PP <- CNP -->
-      <edge from="nter13" id="tre23" to="nter15"/>
+      <edge from="nter15" id="tre23" to="nter13"/>
       <!--  tre24  CNP <- NP -->
-      <edge from="nter15" id="tre24" to="nter16"/>
+      <edge from="nter16" id="tre24" to="nter15"/>
       <!--  tre25  NP <- ADJA -->
-      <edge from="nter16" id="tre25" to="nter17"/>
+      <edge from="nter17" id="tre25" to="nter16"/>
       <!--  tre26  ADJA <- taillierte -->
-      <edge from="nter17" id="tre26" to="ter9"/>
+      <edge from="ter9" id="tre26" to="nter17"/>
       <!--  tre27  NP <- $, -->
-      <edge from="nter16" id="tre27" to="nter18"/>
+      <edge from="nter18" id="tre27" to="nter16"/>
       <!--  tre28  $, <- , -->
-      <edge from="nter18" id="tre28" to="ter10"/>
+      <edge from="ter10" id="tre28" to="nter18"/>
       <!--  tre29  NP <- ADJA -->
-      <edge from="nter16" id="tre29" to="nter19"/>
+      <edge from="nter19" id="tre29" to="nter16"/>
       <!--  tre30  ADJA <- längliche -->
-      <edge from="nter19" id="tre30" to="ter11"/>
+      <edge from="ter11" id="tre30" to="nter19"/>
       <!--  tre31  NP <- NN -->
-      <edge from="nter16" id="tre31" to="nter20"/>
+      <edge from="nter20" id="tre31" to="nter16" head="yes"/>
       <!--  tre32  NN <- Sporen -->
-      <edge from="nter20" id="tre32" to="ter12" head="yes"/>
+      <edge from="ter12" id="tre32" to="nter20"/>
       <!--  tre33  CNP <- KON -->
-      <edge from="nter15" id="tre33" to="nter21"/>
+      <edge from="nter21" id="tre33" to="nter15"/>
       <!--  tre34  KON <- und -->
-      <edge from="nter21" id="tre34" to="ter13"/>
+      <edge from="ter13" id="tre34" to="nter21"/>
       <!--  tre35  CNP <- NP -->
-      <edge from="nter15" id="tre35" to="nter22"/>
+      <edge from="nter22" id="tre35" to="nter15" head="yes"/>
       <!--  tre36  NP <- ART -->
-      <edge from="nter22" id="tre36" to="nter23" head="yes"/>
+      <edge from="nter23" id="tre36" to="nter22"/>
       <!--  tre37  ART <- eine -->
-      <edge from="nter23" id="tre37" to="ter14"/>
+      <edge from="ter14" id="tre37" to="nter23"/>
       <!--  tre38  NP <- NN -->
-      <edge from="nter22" id="tre38" to="nter24" head="yes"/>
+      <edge from="nter24" id="tre38" to="nter22" head="yes"/>
       <!--  tre39  NN <- Grünverfärbung -->
-      <edge from="nter24" id="tre39" to="ter15" head="yes"/>
+      <edge from="ter15" id="tre39" to="nter24"/>
       <!--  tre40  NP <- NP -->
-      <edge from="nter22" id="tre40" to="nter25" head="yes"/>
+      <edge from="nter25" id="tre40" to="nter22"/>
       <!--  tre41  NP <- KOKOM -->
-      <edge from="nter25" id="tre41" to="nter26"/>
+      <edge from="nter26" id="tre41" to="nter25"/>
       <!--  tre42  KOKOM <- als -->
-      <edge from="nter26" id="tre42" to="ter16"/>
+      <edge from="ter16" id="tre42" to="nter26"/>
       <!--  tre43  NP <- NN -->
-      <edge from="nter25" id="tre43" to="nter27"/>
+      <edge from="nter27" id="tre43" to="nter25" head="yes"/>
       <!--  tre44  NN <- KOH-Reaktion -->
-      <edge from="nter27" id="tre44" to="ter17" head="yes"/>
+      <edge from="ter17" id="tre44" to="nter27"/>
       <!--  tre45  S <- $. -->
-      <edge from="nter2" id="tre45" to="nter28" head="yes"/>
+      <edge from="nter28" id="tre45" to="nter2"/>
       <!--  tre46  $. <- . -->
-      <edge from="nter28" id="tre46" to="ter18"/>
+      <edge from="ter18" id="tre46" to="nter28"/>
     </tree>
     <tree>
       <nt id="nter0" label="ROOT"/>
@@ -1719,81 +1719,81 @@
         </span>
       </t>
       <!--  tre0  ROOT <- ROOT -->
-      <edge from="nter0" id="tre0" to="nter1"/>
+      <edge from="nter1" id="tre0" to="nter0"/>
       <!--  tre1  ROOT <- NP -->
-      <edge from="nter1" id="tre1" to="nter2"/>
+      <edge from="nter2" id="tre1" to="nter1" head="yes"/>
       <!--  tre2  NP <- NN -->
-      <edge from="nter2" id="tre2" to="nter3" head="yes"/>
+      <edge from="nter3" id="tre2" to="nter2" head="yes"/>
       <!--  tre3  NN <- Boletopsis -->
-      <edge from="nter3" id="tre3" to="ter0" head="yes"/>
+      <edge from="ter0" id="tre3" to="nter3"/>
       <!--  tre4  NP <- CS -->
-      <edge from="nter2" id="tre4" to="nter4" head="yes"/>
+      <edge from="nter4" id="tre4" to="nter2"/>
       <!--  tre5  CS <- S -->
-      <edge from="nter4" id="tre5" to="nter5"/>
+      <edge from="nter5" id="tre5" to="nter4"/>
       <!--  tre6  S <- VVPP -->
-      <edge from="nter5" id="tre6" to="nter6"/>
+      <edge from="nter6" id="tre6" to="nter5"/>
       <!--  tre7  VVPP <- nothofagi -->
-      <edge from="nter6" id="tre7" to="ter1"/>
+      <edge from="ter1" id="tre7" to="nter6"/>
       <!--  tre8  S <- VAFIN -->
-      <edge from="nter5" id="tre8" to="nter7"/>
+      <edge from="nter7" id="tre8" to="nter5" head="yes"/>
       <!--  tre9  VAFIN <- ist -->
-      <edge from="nter7" id="tre9" to="ter2" head="yes"/>
+      <edge from="ter2" id="tre9" to="nter7"/>
       <!--  tre10  S <- NP-SB -->
-      <edge from="nter5" id="tre10" to="nter8"/>
+      <edge from="nter8" id="tre10" to="nter5"/>
       <!--  tre11  NP-SB <- ART -->
-      <edge from="nter8" id="tre11" to="nter9"/>
+      <edge from="nter9" id="tre11" to="nter8"/>
       <!--  tre12  ART <- ein -->
-      <edge from="nter9" id="tre12" to="ter3"/>
+      <edge from="ter3" id="tre12" to="nter9"/>
       <!--  tre13  NP-SB <- ADJA -->
-      <edge from="nter8" id="tre13" to="nter10"/>
+      <edge from="nter10" id="tre13" to="nter8"/>
       <!--  tre14  ADJA <- neuseeländischer -->
-      <edge from="nter10" id="tre14" to="ter4"/>
+      <edge from="ter4" id="tre14" to="nter10"/>
       <!--  tre15  NP-SB <- NN -->
-      <edge from="nter8" id="tre15" to="nter11"/>
+      <edge from="nter11" id="tre15" to="nter8" head="yes"/>
       <!--  tre16  NN <- Endemit -->
-      <edge from="nter11" id="tre16" to="ter5" head="yes"/>
+      <edge from="ter5" id="tre16" to="nter11"/>
       <!--  tre17  CS <- KON -->
-      <edge from="nter4" id="tre17" to="nter12"/>
+      <edge from="nter12" id="tre17" to="nter4"/>
       <!--  tre18  KON <- und -->
-      <edge from="nter12" id="tre18" to="ter6"/>
+      <edge from="ter6" id="tre18" to="nter12"/>
       <!--  tre19  CS <- S -->
-      <edge from="nter4" id="tre19" to="nter13"/>
+      <edge from="nter13" id="tre19" to="nter4" head="yes"/>
       <!--  tre20  S <- VVFIN -->
-      <edge from="nter13" id="tre20" to="nter14" head="yes"/>
+      <edge from="nter14" id="tre20" to="nter13" head="yes"/>
       <!--  tre21  VVFIN <- bildet -->
-      <edge from="nter14" id="tre21" to="ter7" head="yes"/>
+      <edge from="ter7" id="tre21" to="nter14"/>
       <!--  tre22  S <- ADV -->
-      <edge from="nter13" id="tre22" to="nter15" head="yes"/>
+      <edge from="nter15" id="tre22" to="nter13"/>
       <!--  tre23  ADV <- Mykorrhiza -->
-      <edge from="nter15" id="tre23" to="ter8"/>
+      <edge from="ter8" id="tre23" to="nter15"/>
       <!--  tre24  S <- AP -->
-      <edge from="nter13" id="tre24" to="nter16" head="yes"/>
+      <edge from="nter16" id="tre24" to="nter13"/>
       <!--  tre25  AP <- PP -->
-      <edge from="nter16" id="tre25" to="nter17"/>
+      <edge from="nter17" id="tre25" to="nter16"/>
       <!--  tre26  PP <- APPR -->
-      <edge from="nter17" id="tre26" to="nter18"/>
+      <edge from="nter18" id="tre26" to="nter17" head="yes"/>
       <!--  tre27  APPR <- mit -->
-      <edge from="nter18" id="tre27" to="ter9" head="yes"/>
+      <edge from="ter9" id="tre27" to="nter18"/>
       <!--  tre28  PP <- ART -->
-      <edge from="nter17" id="tre28" to="nter19"/>
+      <edge from="nter19" id="tre28" to="nter17"/>
       <!--  tre29  ART <- der -->
-      <edge from="nter19" id="tre29" to="ter10"/>
+      <edge from="ter10" id="tre29" to="nter19"/>
       <!--  tre30  PP <- ADJA -->
-      <edge from="nter17" id="tre30" to="nter20"/>
+      <edge from="nter20" id="tre30" to="nter17"/>
       <!--  tre31  ADJA <- Scheinbuche -->
-      <edge from="nter20" id="tre31" to="ter11"/>
+      <edge from="ter11" id="tre31" to="nter20"/>
       <!--  tre32  PP <- NN -->
-      <edge from="nter17" id="tre32" to="nter21"/>
+      <edge from="nter21" id="tre32" to="nter17"/>
       <!--  tre33  NN <- Nothofagus -->
-      <edge from="nter21" id="tre33" to="ter12"/>
+      <edge from="ter12" id="tre33" to="nter21"/>
       <!--  tre34  AP <- ADJD -->
-      <edge from="nter16" id="tre34" to="nter22"/>
+      <edge from="nter22" id="tre34" to="nter16" head="yes"/>
       <!--  tre35  ADJD <- fusca -->
-      <edge from="nter22" id="tre35" to="ter13" head="yes"/>
+      <edge from="ter13" id="tre35" to="nter22"/>
       <!--  tre36  NP <- $. -->
-      <edge from="nter2" id="tre36" to="nter23" head="yes"/>
+      <edge from="nter23" id="tre36" to="nter2"/>
       <!--  tre37  $. <- . -->
-      <edge from="nter23" id="tre37" to="ter14"/>
+      <edge from="ter14" id="tre37" to="nter23"/>
     </tree>
     <tree>
       <nt id="nter0" label="ROOT"/>
@@ -1914,93 +1914,93 @@
         </span>
       </t>
       <!--  tre0  ROOT <- ROOT -->
-      <edge from="nter0" id="tre0" to="nter1"/>
+      <edge from="nter1" id="tre0" to="nter0"/>
       <!--  tre1  ROOT <- S -->
-      <edge from="nter1" id="tre1" to="nter2"/>
+      <edge from="nter2" id="tre1" to="nter1" head="yes"/>
       <!--  tre2  S <- S-SB -->
-      <edge from="nter2" id="tre2" to="nter3" head="yes"/>
+      <edge from="nter3" id="tre2" to="nter2"/>
       <!--  tre3  S-SB <- AP -->
-      <edge from="nter3" id="tre3" to="nter4"/>
+      <edge from="nter4" id="tre3" to="nter3"/>
       <!--  tre4  AP <- PWAV -->
-      <edge from="nter4" id="tre4" to="nter5"/>
+      <edge from="nter5" id="tre4" to="nter4"/>
       <!--  tre5  PWAV <- Wann -->
-      <edge from="nter5" id="tre5" to="ter0"/>
+      <edge from="ter0" id="tre5" to="nter5"/>
       <!--  tre6  AP <- ADJD -->
-      <edge from="nter4" id="tre6" to="nter6"/>
+      <edge from="nter6" id="tre6" to="nter4" head="yes"/>
       <!--  tre7  ADJD <- genau -->
-      <edge from="nter6" id="tre7" to="ter1" head="yes"/>
+      <edge from="ter1" id="tre7" to="nter6"/>
       <!--  tre8  S-SB <- NP-SB -->
-      <edge from="nter3" id="tre8" to="nter7"/>
+      <edge from="nter7" id="tre8" to="nter3"/>
       <!--  tre9  NP-SB <- ART -->
-      <edge from="nter7" id="tre9" to="nter8"/>
+      <edge from="nter8" id="tre9" to="nter7"/>
       <!--  tre10  ART <- der -->
-      <edge from="nter8" id="tre10" to="ter2"/>
+      <edge from="ter2" id="tre10" to="nter8"/>
       <!--  tre11  NP-SB <- NE -->
-      <edge from="nter7" id="tre11" to="nter9"/>
+      <edge from="nter9" id="tre11" to="nter7"/>
       <!--  tre12  NE <- Pilz -->
-      <edge from="nter9" id="tre12" to="ter3"/>
+      <edge from="ter3" id="tre12" to="nter9"/>
       <!--  tre13  NP-SB <- NN -->
-      <edge from="nter7" id="tre13" to="nter10"/>
+      <edge from="nter10" id="tre13" to="nter7" head="yes"/>
       <!--  tre14  NN <- Fruchtkörper -->
-      <edge from="nter10" id="tre14" to="ter4" head="yes"/>
+      <edge from="ter4" id="tre14" to="nter10"/>
       <!--  tre15  S-SB <- VVFIN -->
-      <edge from="nter3" id="tre15" to="nter11"/>
+      <edge from="nter11" id="tre15" to="nter3" head="yes"/>
       <!--  tre16  VVFIN <- ausbildet -->
-      <edge from="nter11" id="tre16" to="ter5" head="yes"/>
+      <edge from="ter5" id="tre16" to="nter11"/>
       <!--  tre17  S <- $, -->
-      <edge from="nter2" id="tre17" to="nter12" head="yes"/>
+      <edge from="nter12" id="tre17" to="nter2"/>
       <!--  tre18  $, <- , -->
-      <edge from="nter12" id="tre18" to="ter6"/>
+      <edge from="ter6" id="tre18" to="nter12"/>
       <!--  tre19  S <- VAFIN -->
-      <edge from="nter2" id="tre19" to="nter13" head="yes"/>
+      <edge from="nter13" id="tre19" to="nter2" head="yes"/>
       <!--  tre20  VAFIN <- ist -->
-      <edge from="nter13" id="tre20" to="ter7" head="yes"/>
+      <edge from="ter7" id="tre20" to="nter13"/>
       <!--  tre21  S <- ADJD -->
-      <edge from="nter2" id="tre21" to="nter14" head="yes"/>
+      <edge from="nter14" id="tre21" to="nter2"/>
       <!--  tre22  ADJD <- unbekannt -->
-      <edge from="nter14" id="tre22" to="ter8"/>
+      <edge from="ter8" id="tre22" to="nter14"/>
       <!--  tre23  S <- $, -->
-      <edge from="nter2" id="tre23" to="nter15" head="yes"/>
+      <edge from="nter15" id="tre23" to="nter2"/>
       <!--  tre24  $, <- , -->
-      <edge from="nter15" id="tre24" to="ter9"/>
+      <edge from="ter9" id="tre24" to="nter15"/>
       <!--  tre25  S <- S -->
-      <edge from="nter2" id="tre25" to="nter16" head="yes"/>
+      <edge from="nter16" id="tre25" to="nter2"/>
       <!--  tre26  S <- PPER-SB -->
-      <edge from="nter16" id="tre26" to="nter17"/>
+      <edge from="nter17" id="tre26" to="nter16"/>
       <!--  tre27  PPER-SB <- sie -->
-      <edge from="nter17" id="tre27" to="ter10"/>
+      <edge from="ter10" id="tre27" to="nter17"/>
       <!--  tre28  S <- VAFIN -->
-      <edge from="nter16" id="tre28" to="nter18"/>
+      <edge from="nter18" id="tre28" to="nter16" head="yes"/>
       <!--  tre29  VAFIN <- wurden -->
-      <edge from="nter18" id="tre29" to="ter11" head="yes"/>
+      <edge from="ter11" id="tre29" to="nter18"/>
       <!--  tre30  S <- VP -->
-      <edge from="nter16" id="tre30" to="nter19"/>
+      <edge from="nter19" id="tre30" to="nter16"/>
       <!--  tre31  VP <- PP -->
-      <edge from="nter19" id="tre31" to="nter20"/>
+      <edge from="nter20" id="tre31" to="nter19"/>
       <!--  tre32  PP <- ADV -->
-      <edge from="nter20" id="tre32" to="nter21"/>
+      <edge from="nter21" id="tre32" to="nter20" head="yes"/>
       <!--  tre33  ADV <- bislang -->
-      <edge from="nter21" id="tre33" to="ter12" head="yes"/>
+      <edge from="ter12" id="tre33" to="nter21"/>
       <!--  tre34  PP <- ADV -->
-      <edge from="nter20" id="tre34" to="nter22"/>
+      <edge from="nter22" id="tre34" to="nter20"/>
       <!--  tre35  ADV <- stets -->
-      <edge from="nter22" id="tre35" to="ter13"/>
+      <edge from="ter13" id="tre35" to="nter22"/>
       <!--  tre36  PP <- APPRART -->
-      <edge from="nter20" id="tre36" to="nter23"/>
+      <edge from="nter23" id="tre36" to="nter20"/>
       <!--  tre37  APPRART <- im -->
-      <edge from="nter23" id="tre37" to="ter14"/>
+      <edge from="ter14" id="tre37" to="nter23"/>
       <!--  tre38  PP <- NN -->
-      <edge from="nter20" id="tre38" to="nter24"/>
+      <edge from="nter24" id="tre38" to="nter20"/>
       <!--  tre39  NN <- Herbst -->
-      <edge from="nter24" id="tre39" to="ter15"/>
+      <edge from="ter15" id="tre39" to="nter24"/>
       <!--  tre40  VP <- VVPP -->
-      <edge from="nter19" id="tre40" to="nter25"/>
+      <edge from="nter25" id="tre40" to="nter19" head="yes"/>
       <!--  tre41  VVPP <- gefunden -->
-      <edge from="nter25" id="tre41" to="ter16" head="yes"/>
+      <edge from="ter16" id="tre41" to="nter25"/>
       <!--  tre42  S <- $. -->
-      <edge from="nter2" id="tre42" to="nter26" head="yes"/>
+      <edge from="nter26" id="tre42" to="nter2"/>
       <!--  tre43  $. <- . -->
-      <edge from="nter26" id="tre43" to="ter17"/>
+      <edge from="ter17" id="tre43" to="nter26"/>
     </tree>
     <tree>
       <nt id="nter0" label="ROOT"/>
@@ -2105,85 +2105,85 @@
         </span>
       </t>
       <!--  tre0  ROOT <- ROOT -->
-      <edge from="nter0" id="tre0" to="nter1"/>
+      <edge from="nter1" id="tre0" to="nter0"/>
       <!--  tre1  ROOT <- NUR -->
-      <edge from="nter1" id="tre1" to="nter2"/>
+      <edge from="nter2" id="tre1" to="nter1" head="yes"/>
       <!--  tre2  NUR <- S -->
-      <edge from="nter2" id="tre2" to="nter3" head="yes"/>
+      <edge from="nter3" id="tre2" to="nter2" head="yes"/>
       <!--  tre3  S <- NP-SB -->
-      <edge from="nter3" id="tre3" to="nter4" head="yes"/>
+      <edge from="nter4" id="tre3" to="nter3"/>
       <!--  tre4  NP-SB <- ART -->
-      <edge from="nter4" id="tre4" to="nter5"/>
+      <edge from="nter5" id="tre4" to="nter4"/>
       <!--  tre5  ART <- Die -->
-      <edge from="nter5" id="tre5" to="ter0"/>
+      <edge from="ter0" id="tre5" to="nter5"/>
       <!--  tre6  NP-SB <- NN -->
-      <edge from="nter4" id="tre6" to="nter6"/>
+      <edge from="nter6" id="tre6" to="nter4" head="yes"/>
       <!--  tre7  NN <- Erstbeschreibung -->
-      <edge from="nter6" id="tre7" to="ter1" head="yes"/>
+      <edge from="ter1" id="tre7" to="nter6"/>
       <!--  tre8  NP-SB <- NP -->
-      <edge from="nter4" id="tre8" to="nter7"/>
+      <edge from="nter7" id="tre8" to="nter4"/>
       <!--  tre9  NP <- ART -->
-      <edge from="nter7" id="tre9" to="nter8"/>
+      <edge from="nter8" id="tre9" to="nter7"/>
       <!--  tre10  ART <- der -->
-      <edge from="nter8" id="tre10" to="ter2"/>
+      <edge from="ter2" id="tre10" to="nter8"/>
       <!--  tre11  NP <- NN -->
-      <edge from="nter7" id="tre11" to="nter9"/>
+      <edge from="nter9" id="tre11" to="nter7" head="yes"/>
       <!--  tre12  NN <- Art -->
-      <edge from="nter9" id="tre12" to="ter3" head="yes"/>
+      <edge from="ter3" id="tre12" to="nter9"/>
       <!--  tre13  NP-SB <- PP -->
-      <edge from="nter4" id="tre13" to="nter10"/>
+      <edge from="nter10" id="tre13" to="nter4"/>
       <!--  tre14  PP <- APPR -->
-      <edge from="nter10" id="tre14" to="nter11"/>
+      <edge from="nter11" id="tre14" to="nter10" head="yes"/>
       <!--  tre15  APPR <- von -->
-      <edge from="nter11" id="tre15" to="ter4" head="yes"/>
+      <edge from="ter4" id="tre15" to="nter11"/>
       <!--  tre16  PP <- CNP -->
-      <edge from="nter10" id="tre16" to="nter12"/>
+      <edge from="nter12" id="tre16" to="nter10"/>
       <!--  tre17  CNP <- MPN -->
-      <edge from="nter12" id="tre17" to="nter13"/>
+      <edge from="nter13" id="tre17" to="nter12"/>
       <!--  tre18  MPN <- NE -->
-      <edge from="nter13" id="tre18" to="nter14"/>
+      <edge from="nter14" id="tre18" to="nter13"/>
       <!--  tre19  NE <- Jerry -->
-      <edge from="nter14" id="tre19" to="ter5"/>
+      <edge from="ter5" id="tre19" to="nter14"/>
       <!--  tre20  MPN <- NE -->
-      <edge from="nter13" id="tre20" to="nter15"/>
+      <edge from="nter15" id="tre20" to="nter13" head="yes"/>
       <!--  tre21  NE <- Cooper -->
-      <edge from="nter15" id="tre21" to="ter6" head="yes"/>
+      <edge from="ter6" id="tre21" to="nter15"/>
       <!--  tre22  CNP <- KON -->
-      <edge from="nter12" id="tre22" to="nter16"/>
+      <edge from="nter16" id="tre22" to="nter12"/>
       <!--  tre23  KON <- und -->
-      <edge from="nter16" id="tre23" to="ter7"/>
+      <edge from="ter7" id="tre23" to="nter16"/>
       <!--  tre24  CNP <- MPN -->
-      <edge from="nter12" id="tre24" to="nter17"/>
+      <edge from="nter17" id="tre24" to="nter12" head="yes"/>
       <!--  tre25  MPN <- NE -->
-      <edge from="nter17" id="tre25" to="nter18" head="yes"/>
+      <edge from="nter18" id="tre25" to="nter17"/>
       <!--  tre26  NE <- Patrick -->
-      <edge from="nter18" id="tre26" to="ter8"/>
+      <edge from="ter8" id="tre26" to="nter18"/>
       <!--  tre27  MPN <- NE -->
-      <edge from="nter17" id="tre27" to="nter19" head="yes"/>
+      <edge from="nter19" id="tre27" to="nter17" head="yes"/>
       <!--  tre28  NE <- Leonard -->
-      <edge from="nter19" id="tre28" to="ter9" head="yes"/>
+      <edge from="ter9" id="tre28" to="nter19"/>
       <!--  tre29  S <- VVFIN -->
-      <edge from="nter3" id="tre29" to="nter20" head="yes"/>
+      <edge from="nter20" id="tre29" to="nter3" head="yes"/>
       <!--  tre30  VVFIN <- stammt -->
-      <edge from="nter20" id="tre30" to="ter10" head="yes"/>
+      <edge from="ter10" id="tre30" to="nter20"/>
       <!--  tre31  S <- PP -->
-      <edge from="nter3" id="tre31" to="nter21" head="yes"/>
+      <edge from="nter21" id="tre31" to="nter3"/>
       <!--  tre32  PP <- APPR -->
-      <edge from="nter21" id="tre32" to="nter22"/>
+      <edge from="nter22" id="tre32" to="nter21" head="yes"/>
       <!--  tre33  APPR <- aus -->
-      <edge from="nter22" id="tre33" to="ter11" head="yes"/>
+      <edge from="ter11" id="tre33" to="nter22"/>
       <!--  tre34  PP <- ART -->
-      <edge from="nter21" id="tre34" to="nter23"/>
+      <edge from="nter23" id="tre34" to="nter21"/>
       <!--  tre35  ART <- dem -->
-      <edge from="nter23" id="tre35" to="ter12"/>
+      <edge from="ter12" id="tre35" to="nter23"/>
       <!--  tre36  PP <- NN -->
-      <edge from="nter21" id="tre36" to="nter24"/>
+      <edge from="nter24" id="tre36" to="nter21"/>
       <!--  tre37  NN <- Jahr -->
-      <edge from="nter24" id="tre37" to="ter13"/>
+      <edge from="ter13" id="tre37" to="nter24"/>
       <!--  tre38  PP <- CARD -->
-      <edge from="nter21" id="tre38" to="nter25"/>
+      <edge from="nter25" id="tre38" to="nter21"/>
       <!--  tre39  CARD <- 2012. -->
-      <edge from="nter25" id="tre39" to="ter14"/>
+      <edge from="ter14" id="tre39" to="nter25"/>
     </tree>
     <tree>
       <nt id="nter0" label="ROOT"/>
@@ -2273,71 +2273,71 @@
         </span>
       </t>
       <!--  tre0  ROOT <- ROOT -->
-      <edge from="nter0" id="tre0" to="nter1"/>
+      <edge from="nter1" id="tre0" to="nter0"/>
       <!--  tre1  ROOT <- S -->
-      <edge from="nter1" id="tre1" to="nter2"/>
+      <edge from="nter2" id="tre1" to="nter1" head="yes"/>
       <!--  tre2  S <- VP -->
-      <edge from="nter2" id="tre2" to="nter3" head="yes"/>
+      <edge from="nter3" id="tre2" to="nter2"/>
       <!--  tre3  VP <- NN-OA -->
-      <edge from="nter3" id="tre3" to="nter4"/>
+      <edge from="nter4" id="tre3" to="nter3"/>
       <!--  tre4  NN-OA <- Boletopsis -->
-      <edge from="nter4" id="tre4" to="ter0"/>
+      <edge from="ter0" id="tre4" to="nter4"/>
       <!--  tre5  VP <- VVPP -->
-      <edge from="nter3" id="tre5" to="nter5"/>
+      <edge from="nter5" id="tre5" to="nter3" head="yes"/>
       <!--  tre6  VVPP <- nothofagi -->
-      <edge from="nter5" id="tre6" to="ter1" head="yes"/>
+      <edge from="ter1" id="tre6" to="nter5"/>
       <!--  tre7  S <- VAFIN -->
-      <edge from="nter2" id="tre7" to="nter6" head="yes"/>
+      <edge from="nter6" id="tre7" to="nter2" head="yes"/>
       <!--  tre8  VAFIN <- ist -->
-      <edge from="nter6" id="tre8" to="ter2" head="yes"/>
+      <edge from="ter2" id="tre8" to="nter6"/>
       <!--  tre9  S <- PP -->
-      <edge from="nter2" id="tre9" to="nter7" head="yes"/>
+      <edge from="nter7" id="tre9" to="nter2"/>
       <!--  tre10  PP <- NN -->
-      <edge from="nter7" id="tre10" to="nter8"/>
+      <edge from="nter8" id="tre10" to="nter7" head="yes"/>
       <!--  tre11  NN <- DNA-Untersuchungen -->
-      <edge from="nter8" id="tre11" to="ter3" head="yes"/>
+      <edge from="ter3" id="tre11" to="nter8"/>
       <!--  tre12  PP <- APPO -->
-      <edge from="nter7" id="tre12" to="nter9"/>
+      <edge from="nter9" id="tre12" to="nter7"/>
       <!--  tre13  APPO <- zufolge -->
-      <edge from="nter9" id="tre13" to="ter4"/>
+      <edge from="ter4" id="tre13" to="nter9"/>
       <!--  tre14  S <- NP-SB -->
-      <edge from="nter2" id="tre14" to="nter10" head="yes"/>
+      <edge from="nter10" id="tre14" to="nter2"/>
       <!--  tre15  NP-SB <- ART -->
-      <edge from="nter10" id="tre15" to="nter11"/>
+      <edge from="nter11" id="tre15" to="nter10"/>
       <!--  tre16  ART <- ein -->
-      <edge from="nter11" id="tre16" to="ter5"/>
+      <edge from="ter5" id="tre16" to="nter11"/>
       <!--  tre17  NP-SB <- AP -->
-      <edge from="nter10" id="tre17" to="nter12"/>
+      <edge from="nter12" id="tre17" to="nter10"/>
       <!--  tre18  AP <- ADV -->
-      <edge from="nter12" id="tre18" to="nter13"/>
+      <edge from="nter13" id="tre18" to="nter12"/>
       <!--  tre19  ADV <- eher -->
-      <edge from="nter13" id="tre19" to="ter6"/>
+      <edge from="ter6" id="tre19" to="nter13"/>
       <!--  tre20  AP <- ADJA -->
-      <edge from="nter12" id="tre20" to="nter14"/>
+      <edge from="nter14" id="tre20" to="nter12" head="yes"/>
       <!--  tre21  ADJA <- basaler -->
-      <edge from="nter14" id="tre21" to="ter7" head="yes"/>
+      <edge from="ter7" id="tre21" to="nter14"/>
       <!--  tre22  NP-SB <- NN -->
-      <edge from="nter10" id="tre22" to="nter15"/>
+      <edge from="nter15" id="tre22" to="nter10" head="yes"/>
       <!--  tre23  NN <- Vertreter -->
-      <edge from="nter15" id="tre23" to="ter8" head="yes"/>
+      <edge from="ter8" id="tre23" to="nter15"/>
       <!--  tre24  NP-SB <- NP -->
-      <edge from="nter10" id="tre24" to="nter16"/>
+      <edge from="nter16" id="tre24" to="nter10"/>
       <!--  tre25  NP <- ART -->
-      <edge from="nter16" id="tre25" to="nter17"/>
+      <edge from="nter17" id="tre25" to="nter16"/>
       <!--  tre26  ART <- der -->
-      <edge from="nter17" id="tre26" to="ter9"/>
+      <edge from="ter9" id="tre26" to="nter17"/>
       <!--  tre27  NP <- NN -->
-      <edge from="nter16" id="tre27" to="nter18"/>
+      <edge from="nter18" id="tre27" to="nter16" head="yes"/>
       <!--  tre28  NN <- Gattung -->
-      <edge from="nter18" id="tre28" to="ter10" head="yes"/>
+      <edge from="ter10" id="tre28" to="nter18"/>
       <!--  tre29  NP <- NE -->
-      <edge from="nter16" id="tre29" to="nter19"/>
+      <edge from="nter19" id="tre29" to="nter16"/>
       <!--  tre30  NE <- Boletopsis -->
-      <edge from="nter19" id="tre30" to="ter11"/>
+      <edge from="ter11" id="tre30" to="nter19"/>
       <!--  tre31  S <- $. -->
-      <edge from="nter2" id="tre31" to="nter20" head="yes"/>
+      <edge from="nter20" id="tre31" to="nter2"/>
       <!--  tre32  $. <- . -->
-      <edge from="nter20" id="tre32" to="ter12"/>
+      <edge from="ter12" id="tre32" to="nter20"/>
     </tree>
     <tree>
       <nt id="nter0" label="ROOT"/>
@@ -2477,107 +2477,107 @@
         </span>
       </t>
       <!--  tre0  ROOT <- ROOT -->
-      <edge from="nter0" id="tre0" to="nter1"/>
+      <edge from="nter1" id="tre0" to="nter0"/>
       <!--  tre1  ROOT <- CS -->
-      <edge from="nter1" id="tre1" to="nter2"/>
+      <edge from="nter2" id="tre1" to="nter1" head="yes"/>
       <!--  tre2  CS <- S -->
-      <edge from="nter2" id="tre2" to="nter3" head="yes"/>
+      <edge from="nter3" id="tre2" to="nter2"/>
       <!--  tre3  S <- ADJD -->
-      <edge from="nter3" id="tre3" to="nter4"/>
+      <edge from="nter4" id="tre3" to="nter3"/>
       <!--  tre4  ADJD <- Wahrscheinlich -->
-      <edge from="nter4" id="tre4" to="ter0"/>
+      <edge from="ter0" id="tre4" to="nter4"/>
       <!--  tre5  S <- VAFIN -->
-      <edge from="nter3" id="tre5" to="nter5"/>
+      <edge from="nter5" id="tre5" to="nter3" head="yes"/>
       <!--  tre6  VAFIN <- ist -->
-      <edge from="nter5" id="tre6" to="ter1" head="yes"/>
+      <edge from="ter1" id="tre6" to="nter5"/>
       <!--  tre7  S <- NP-SB -->
-      <edge from="nter3" id="tre7" to="nter6"/>
+      <edge from="nter6" id="tre7" to="nter3"/>
       <!--  tre8  NP-SB <- ART -->
-      <edge from="nter6" id="tre8" to="nter7"/>
+      <edge from="nter7" id="tre8" to="nter6"/>
       <!--  tre9  ART <- der -->
-      <edge from="nter7" id="tre9" to="ter2"/>
+      <edge from="ter2" id="tre9" to="nter7"/>
       <!--  tre10  NP-SB <- NE -->
-      <edge from="nter6" id="tre10" to="nter8"/>
+      <edge from="nter8" id="tre10" to="nter6" head="yes"/>
       <!--  tre11  NE <- Pilz -->
-      <edge from="nter8" id="tre11" to="ter3" head="yes"/>
+      <edge from="ter3" id="tre11" to="nter8"/>
       <!--  tre12  S <- NP-OA -->
-      <edge from="nter3" id="tre12" to="nter9"/>
+      <edge from="nter9" id="tre12" to="nter3"/>
       <!--  tre13  NP-OA <- ART -->
-      <edge from="nter9" id="tre13" to="nter10"/>
+      <edge from="nter10" id="tre13" to="nter9"/>
       <!--  tre14  ART <- eine -->
-      <edge from="nter10" id="tre14" to="ter4"/>
+      <edge from="ter4" id="tre14" to="nter10"/>
       <!--  tre15  NP-OA <- ADJA -->
-      <edge from="nter9" id="tre15" to="nter11"/>
+      <edge from="nter11" id="tre15" to="nter9"/>
       <!--  tre16  ADJA <- autochthone -->
-      <edge from="nter11" id="tre16" to="ter5"/>
+      <edge from="ter5" id="tre16" to="nter11"/>
       <!--  tre17  NP-OA <- NN -->
-      <edge from="nter9" id="tre17" to="nter12"/>
+      <edge from="nter12" id="tre17" to="nter9" head="yes"/>
       <!--  tre18  NN <- Art -->
-      <edge from="nter12" id="tre18" to="ter6" head="yes"/>
+      <edge from="ter6" id="tre18" to="nter12"/>
       <!--  tre19  NP-OA <- NE -->
-      <edge from="nter9" id="tre19" to="nter13"/>
+      <edge from="nter13" id="tre19" to="nter9"/>
       <!--  tre20  NE <- Neuseelands -->
-      <edge from="nter13" id="tre20" to="ter7"/>
+      <edge from="ter7" id="tre20" to="nter13"/>
       <!--  tre21  CS <- KON -->
-      <edge from="nter2" id="tre21" to="nter14" head="yes"/>
+      <edge from="nter14" id="tre21" to="nter2"/>
       <!--  tre22  KON <- und -->
-      <edge from="nter14" id="tre22" to="ter8"/>
+      <edge from="ter8" id="tre22" to="nter14"/>
       <!--  tre23  CS <- S -->
-      <edge from="nter2" id="tre23" to="nter15" head="yes"/>
+      <edge from="nter15" id="tre23" to="nter2" head="yes"/>
       <!--  tre24  S <- VAFIN -->
-      <edge from="nter15" id="tre24" to="nter16" head="yes"/>
+      <edge from="nter16" id="tre24" to="nter15" head="yes"/>
       <!--  tre25  VAFIN <- war -->
-      <edge from="nter16" id="tre25" to="ter9" head="yes"/>
+      <edge from="ter9" id="tre25" to="nter16"/>
       <!--  tre26  S <- PP -->
-      <edge from="nter15" id="tre26" to="nter17" head="yes"/>
+      <edge from="nter17" id="tre26" to="nter15"/>
       <!--  tre27  PP <- APPR -->
-      <edge from="nter17" id="tre27" to="nter18"/>
+      <edge from="nter18" id="tre27" to="nter17" head="yes"/>
       <!--  tre28  APPR <- auf -->
-      <edge from="nter18" id="tre28" to="ter10" head="yes"/>
+      <edge from="ter10" id="tre28" to="nter18"/>
       <!--  tre29  PP <- ART -->
-      <edge from="nter17" id="tre29" to="nter19"/>
+      <edge from="nter19" id="tre29" to="nter17"/>
       <!--  tre30  ART <- dem -->
-      <edge from="nter19" id="tre30" to="ter11"/>
+      <edge from="ter11" id="tre30" to="nter19"/>
       <!--  tre31  PP <- NN -->
-      <edge from="nter17" id="tre31" to="nter20"/>
+      <edge from="nter20" id="tre31" to="nter17"/>
       <!--  tre32  NN <- Archipel -->
-      <edge from="nter20" id="tre32" to="ter12"/>
+      <edge from="ter12" id="tre32" to="nter20"/>
       <!--  tre33  S <- PP -->
-      <edge from="nter15" id="tre33" to="nter21" head="yes"/>
+      <edge from="nter21" id="tre33" to="nter15"/>
       <!--  tre34  PP <- ADV -->
-      <edge from="nter21" id="tre34" to="nter22"/>
+      <edge from="nter22" id="tre34" to="nter21"/>
       <!--  tre35  ADV <- bereits -->
-      <edge from="nter22" id="tre35" to="ter13"/>
+      <edge from="ter13" id="tre35" to="nter22"/>
       <!--  tre36  PP <- APPR -->
-      <edge from="nter21" id="tre36" to="nter23"/>
+      <edge from="nter23" id="tre36" to="nter21" head="yes"/>
       <!--  tre37  APPR <- vor -->
-      <edge from="nter23" id="tre37" to="ter14" head="yes"/>
+      <edge from="ter14" id="tre37" to="nter23"/>
       <!--  tre38  PP <- ART -->
-      <edge from="nter21" id="tre38" to="nter24"/>
+      <edge from="nter24" id="tre38" to="nter21"/>
       <!--  tre39  ART <- der -->
-      <edge from="nter24" id="tre39" to="ter15"/>
+      <edge from="ter15" id="tre39" to="nter24"/>
       <!--  tre40  PP <- NN -->
-      <edge from="nter21" id="tre40" to="nter25"/>
+      <edge from="nter25" id="tre40" to="nter21"/>
       <!--  tre41  NN <- Ankunft -->
-      <edge from="nter25" id="tre41" to="ter16"/>
+      <edge from="ter16" id="tre41" to="nter25"/>
       <!--  tre42  PP <- NP -->
-      <edge from="nter21" id="tre42" to="nter26"/>
+      <edge from="nter26" id="tre42" to="nter21"/>
       <!--  tre43  NP <- ART -->
-      <edge from="nter26" id="tre43" to="nter27"/>
+      <edge from="nter27" id="tre43" to="nter26"/>
       <!--  tre44  ART <- der -->
-      <edge from="nter27" id="tre44" to="ter17"/>
+      <edge from="ter17" id="tre44" to="nter27"/>
       <!--  tre45  NP <- NN -->
-      <edge from="nter26" id="tre45" to="nter28"/>
+      <edge from="nter28" id="tre45" to="nter26" head="yes"/>
       <!--  tre46  NN <- Europäer -->
-      <edge from="nter28" id="tre46" to="ter18" head="yes"/>
+      <edge from="ter18" id="tre46" to="nter28"/>
       <!--  tre47  S <- ADJD -->
-      <edge from="nter15" id="tre47" to="nter29" head="yes"/>
+      <edge from="nter29" id="tre47" to="nter15"/>
       <!--  tre48  ADJD <- heimisch -->
-      <edge from="nter29" id="tre48" to="ter19"/>
+      <edge from="ter19" id="tre48" to="nter29"/>
       <!--  tre49  CS <- $. -->
-      <edge from="nter2" id="tre49" to="nter30" head="yes"/>
+      <edge from="nter30" id="tre49" to="nter2"/>
       <!--  tre50  $. <- . -->
-      <edge from="nter30" id="tre50" to="ter20"/>
+      <edge from="ter20" id="tre50" to="nter30"/>
     </tree>
     <tree>
       <nt id="nter0" label="ROOT"/>
@@ -2711,103 +2711,103 @@
         </span>
       </t>
       <!--  tre0  ROOT <- ROOT -->
-      <edge from="nter0" id="tre0" to="nter1"/>
+      <edge from="nter1" id="tre0" to="nter0"/>
       <!--  tre1  ROOT <- CS -->
-      <edge from="nter1" id="tre1" to="nter2"/>
+      <edge from="nter2" id="tre1" to="nter1" head="yes"/>
       <!--  tre2  CS <- S -->
-      <edge from="nter2" id="tre2" to="nter3" head="yes"/>
+      <edge from="nter3" id="tre2" to="nter2"/>
       <!--  tre3  S <- PPER-SB -->
-      <edge from="nter3" id="tre3" to="nter4"/>
+      <edge from="nter4" id="tre3" to="nter3"/>
       <!--  tre4  PPER-SB <- Er -->
-      <edge from="nter4" id="tre4" to="ter0"/>
+      <edge from="ter0" id="tre4" to="nter4"/>
       <!--  tre5  S <- VVFIN -->
-      <edge from="nter3" id="tre5" to="nter5"/>
+      <edge from="nter5" id="tre5" to="nter3" head="yes"/>
       <!--  tre6  VVFIN <- gilt -->
-      <edge from="nter5" id="tre6" to="ter1" head="yes"/>
+      <edge from="ter1" id="tre6" to="nter5"/>
       <!--  tre7  S <- AP -->
-      <edge from="nter3" id="tre7" to="nter6"/>
+      <edge from="nter6" id="tre7" to="nter3"/>
       <!--  tre8  AP <- KOKOM -->
-      <edge from="nter6" id="tre8" to="nter7"/>
+      <edge from="nter7" id="tre8" to="nter6"/>
       <!--  tre9  KOKOM <- als -->
-      <edge from="nter7" id="tre9" to="ter2"/>
+      <edge from="ter2" id="tre9" to="nter7"/>
       <!--  tre10  AP <- ADV -->
-      <edge from="nter6" id="tre10" to="nter8"/>
+      <edge from="nter8" id="tre10" to="nter6"/>
       <!--  tre11  ADV <- sehr -->
-      <edge from="nter8" id="tre11" to="ter3"/>
+      <edge from="ter3" id="tre11" to="nter8"/>
       <!--  tre12  AP <- ADJD -->
-      <edge from="nter6" id="tre12" to="nter9"/>
+      <edge from="nter9" id="tre12" to="nter6" head="yes"/>
       <!--  tre13  ADJD <- selten -->
-      <edge from="nter9" id="tre13" to="ter4" head="yes"/>
+      <edge from="ter4" id="tre13" to="nter9"/>
       <!--  tre14  CS <- KON -->
-      <edge from="nter2" id="tre14" to="nter10" head="yes"/>
+      <edge from="nter10" id="tre14" to="nter2"/>
       <!--  tre15  KON <- und -->
-      <edge from="nter10" id="tre15" to="ter5"/>
+      <edge from="ter5" id="tre15" to="nter10"/>
       <!--  tre16  CS <- S -->
-      <edge from="nter2" id="tre16" to="nter11" head="yes"/>
+      <edge from="nter11" id="tre16" to="nter2" head="yes"/>
       <!--  tre17  S <- VP -->
-      <edge from="nter11" id="tre17" to="nter12" head="yes"/>
+      <edge from="nter12" id="tre17" to="nter11"/>
       <!--  tre18  VP <- ADV -->
-      <edge from="nter12" id="tre18" to="nter13"/>
+      <edge from="nter13" id="tre18" to="nter12"/>
       <!--  tre19  ADV <- möglicherweise -->
-      <edge from="nter13" id="tre19" to="ter6"/>
+      <edge from="ter6" id="tre19" to="nter13"/>
       <!--  tre20  VP <- VVPP -->
-      <edge from="nter12" id="tre20" to="nter14"/>
+      <edge from="nter14" id="tre20" to="nter12" head="yes"/>
       <!--  tre21  VVPP <- bedroht -->
-      <edge from="nter14" id="tre21" to="ter7" head="yes"/>
+      <edge from="ter7" id="tre21" to="nter14"/>
       <!--  tre22  S <- $, -->
-      <edge from="nter11" id="tre22" to="nter15" head="yes"/>
+      <edge from="nter15" id="tre22" to="nter11"/>
       <!--  tre23  $, <- , -->
-      <edge from="nter15" id="tre23" to="ter8"/>
+      <edge from="ter8" id="tre23" to="nter15"/>
       <!--  tre24  S <- VAFIN -->
-      <edge from="nter11" id="tre24" to="nter16" head="yes"/>
+      <edge from="nter16" id="tre24" to="nter11" head="yes"/>
       <!--  tre25  VAFIN <- wurde -->
-      <edge from="nter16" id="tre25" to="ter9" head="yes"/>
+      <edge from="ter9" id="tre25" to="nter16"/>
       <!--  tre26  S <- VP -->
-      <edge from="nter11" id="tre26" to="nter17" head="yes"/>
+      <edge from="nter17" id="tre26" to="nter11"/>
       <!--  tre27  VP <- ADV -->
-      <edge from="nter17" id="tre27" to="nter18"/>
+      <edge from="nter18" id="tre27" to="nter17"/>
       <!--  tre28  ADV <- aber -->
-      <edge from="nter18" id="tre28" to="ter10"/>
+      <edge from="ter10" id="tre28" to="nter18"/>
       <!--  tre29  VP <- ADV -->
-      <edge from="nter17" id="tre29" to="nter19"/>
+      <edge from="nter19" id="tre29" to="nter17"/>
       <!--  tre30  ADV <- bislang -->
-      <edge from="nter19" id="tre30" to="ter11"/>
+      <edge from="ter11" id="tre30" to="nter19"/>
       <!--  tre31  VP <- AVP -->
-      <edge from="nter17" id="tre31" to="nter20"/>
+      <edge from="nter20" id="tre31" to="nter17"/>
       <!--  tre32  AVP <- ADV -->
-      <edge from="nter20" id="tre32" to="nter21"/>
+      <edge from="nter21" id="tre32" to="nter20" head="yes"/>
       <!--  tre33  ADV <- noch -->
-      <edge from="nter21" id="tre33" to="ter12" head="yes"/>
+      <edge from="ter12" id="tre33" to="nter21"/>
       <!--  tre34  AVP <- PTKNEG -->
-      <edge from="nter20" id="tre34" to="nter22"/>
+      <edge from="nter22" id="tre34" to="nter20"/>
       <!--  tre35  PTKNEG <- nicht -->
-      <edge from="nter22" id="tre35" to="ter13"/>
+      <edge from="ter13" id="tre35" to="nter22"/>
       <!--  tre36  VP <- PP -->
-      <edge from="nter17" id="tre36" to="nter23"/>
+      <edge from="nter23" id="tre36" to="nter17"/>
       <!--  tre37  PP <- APPR -->
-      <edge from="nter23" id="tre37" to="nter24"/>
+      <edge from="nter24" id="tre37" to="nter23" head="yes"/>
       <!--  tre38  APPR <- auf -->
-      <edge from="nter24" id="tre38" to="ter14" head="yes"/>
+      <edge from="ter14" id="tre38" to="nter24"/>
       <!--  tre39  PP <- ART -->
-      <edge from="nter23" id="tre39" to="nter25"/>
+      <edge from="nter25" id="tre39" to="nter23"/>
       <!--  tre40  ART <- eine -->
-      <edge from="nter25" id="tre40" to="ter15"/>
+      <edge from="ter15" id="tre40" to="nter25"/>
       <!--  tre41  PP <- ADJA -->
-      <edge from="nter23" id="tre41" to="nter26"/>
+      <edge from="nter26" id="tre41" to="nter23"/>
       <!--  tre42  ADJA <- Rote -->
-      <edge from="nter26" id="tre42" to="ter16"/>
+      <edge from="ter16" id="tre42" to="nter26"/>
       <!--  tre43  PP <- NN -->
-      <edge from="nter23" id="tre43" to="nter27"/>
+      <edge from="nter27" id="tre43" to="nter23"/>
       <!--  tre44  NN <- Liste -->
-      <edge from="nter27" id="tre44" to="ter17"/>
+      <edge from="ter17" id="tre44" to="nter27"/>
       <!--  tre45  VP <- VVPP -->
-      <edge from="nter17" id="tre45" to="nter28"/>
+      <edge from="nter28" id="tre45" to="nter17" head="yes"/>
       <!--  tre46  VVPP <- aufgenommen -->
-      <edge from="nter28" id="tre46" to="ter18" head="yes"/>
+      <edge from="ter18" id="tre46" to="nter28"/>
       <!--  tre47  CS <- $. -->
-      <edge from="nter2" id="tre47" to="nter29" head="yes"/>
+      <edge from="nter29" id="tre47" to="nter2"/>
       <!--  tre48  $. <- . -->
-      <edge from="nter29" id="tre48" to="ter19"/>
+      <edge from="ter19" id="tre48" to="nter29"/>
     </tree>
   </constituency>
 </KAF>

@@ -16,7 +16,7 @@ from convert_penn_to_kaf import convert_penn_to_kaf
 # 23dec2013 --> adapted output to KAF
 
 this_name = 'Stanford German constituency parser trained on NEGRA corpus'
-version = '1.1'
+version = '1.2'
 last_modified = '17jan2014'
 this_layer = 'constituents'
 __module_folder__ = os.path.dirname(__file__)
