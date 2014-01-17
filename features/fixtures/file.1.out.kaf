@@ -6,7 +6,7 @@
       <lp timestamp="2013-04-26T11:35:19CEST" version="1.0" name="Open-nlp tokenizer"/>
     </linguisticProcessors>
     <linguisticProcessor layer="constituents">
-      <lp timestamp="*" version="1.2_17jan2014" name="Stanford German constituency parser trained on NEGRA corpus"/>
+      <lp timestamp="*" version="1.3_17jan2014" name="Stanford German constituency parser trained on NEGRA corpus"/>
     </linguisticProcessor>
     <linguisticProcessor layer="term">
       <lp timestamp="2013-12-23T09:44:50CET" version="1.0" name="Open nlp pos tagger"/>
@@ -175,43 +175,42 @@
   <constituency>
     <tree>
       <nt id="nter0" label="ROOT"/>
-      <nt id="nter1" label="ROOT"/>
-      <nt id="nter2" label="S"/>
-      <nt id="nter3" label="NP-SB"/>
-      <nt id="nter4" label="NN"/>
-      <nt id="nter5" label="PP"/>
-      <nt id="nter6" label="APPR"/>
-      <nt id="nter7" label="PPOSAT"/>
-      <nt id="nter8" label="NN"/>
-      <nt id="nter9" label="VAFIN"/>
-      <nt id="nter10" label="PDS-SB"/>
-      <nt id="nter11" label="CNP"/>
-      <nt id="nter12" label="NP"/>
-      <nt id="nter13" label="ADJA"/>
-      <nt id="nter14" label="NN"/>
-      <nt id="nter15" label="$,"/>
-      <nt id="nter16" label="NP"/>
-      <nt id="nter17" label="ADV"/>
-      <nt id="nter18" label="ART"/>
-      <nt id="nter19" label="NN"/>
-      <nt id="nter20" label="$,"/>
-      <nt id="nter21" label="KON"/>
-      <nt id="nter22" label="NP"/>
-      <nt id="nter23" label="ART"/>
-      <nt id="nter24" label="NN"/>
-      <nt id="nter25" label="CNP"/>
-      <nt id="nter26" label="NN"/>
-      <nt id="nter27" label="$,"/>
-      <nt id="nter28" label="NP"/>
-      <nt id="nter29" label="NN"/>
-      <nt id="nter30" label="PP"/>
-      <nt id="nter31" label="APPR"/>
-      <nt id="nter32" label="NN"/>
-      <nt id="nter33" label="$,"/>
-      <nt id="nter34" label="NN"/>
-      <nt id="nter35" label="KON"/>
-      <nt id="nter36" label="NN"/>
-      <nt id="nter37" label="$."/>
+      <nt id="nter1" label="S"/>
+      <nt id="nter2" label="NP-SB"/>
+      <nt id="nter3" label="NN"/>
+      <nt id="nter4" label="PP"/>
+      <nt id="nter5" label="APPR"/>
+      <nt id="nter6" label="PPOSAT"/>
+      <nt id="nter7" label="NN"/>
+      <nt id="nter8" label="VAFIN"/>
+      <nt id="nter9" label="PDS-SB"/>
+      <nt id="nter10" label="CNP"/>
+      <nt id="nter11" label="NP"/>
+      <nt id="nter12" label="ADJA"/>
+      <nt id="nter13" label="NN"/>
+      <nt id="nter14" label="$,"/>
+      <nt id="nter15" label="NP"/>
+      <nt id="nter16" label="ADV"/>
+      <nt id="nter17" label="ART"/>
+      <nt id="nter18" label="NN"/>
+      <nt id="nter19" label="$,"/>
+      <nt id="nter20" label="KON"/>
+      <nt id="nter21" label="NP"/>
+      <nt id="nter22" label="ART"/>
+      <nt id="nter23" label="NN"/>
+      <nt id="nter24" label="CNP"/>
+      <nt id="nter25" label="NN"/>
+      <nt id="nter26" label="$,"/>
+      <nt id="nter27" label="NP"/>
+      <nt id="nter28" label="NN"/>
+      <nt id="nter29" label="PP"/>
+      <nt id="nter30" label="APPR"/>
+      <nt id="nter31" label="NN"/>
+      <nt id="nter32" label="$,"/>
+      <nt id="nter33" label="NN"/>
+      <nt id="nter34" label="KON"/>
+      <nt id="nter35" label="NN"/>
+      <nt id="nter36" label="$."/>
       <t id="ter0">
         <span>
           <target id="t1"/>
@@ -342,132 +341,130 @@
           <target id="t26"/>
         </span>
       </t>
-      <!--  tre0  ROOT <- ROOT -->
-      <edge from="nter1" id="tre0" to="nter0"/>
-      <!--  tre1  ROOT <- S -->
-      <edge from="nter2" id="tre1" to="nter1" head="yes"/>
-      <!--  tre2  S <- NP-SB -->
-      <edge from="nter3" id="tre2" to="nter2"/>
-      <!--  tre3  NP-SB <- NN -->
-      <edge from="nter4" id="tre3" to="nter3" head="yes"/>
-      <!--  tre4  NN <- Belege -->
-      <edge from="ter0" id="tre4" to="nter4"/>
-      <!--  tre5  NP-SB <- PP -->
-      <edge from="nter5" id="tre5" to="nter3"/>
-      <!--  tre6  PP <- APPR -->
-      <edge from="nter6" id="tre6" to="nter5" head="yes"/>
-      <!--  tre7  APPR <- über -->
-      <edge from="ter1" id="tre7" to="nter6"/>
-      <!--  tre8  PP <- PPOSAT -->
-      <edge from="nter7" id="tre8" to="nter5"/>
-      <!--  tre9  PPOSAT <- sein -->
-      <edge from="ter2" id="tre9" to="nter7"/>
-      <!--  tre10  PP <- NN -->
-      <edge from="nter8" id="tre10" to="nter5"/>
-      <!--  tre11  NN <- Leben -->
-      <edge from="ter3" id="tre11" to="nter8"/>
-      <!--  tre12  S <- VAFIN -->
-      <edge from="nter9" id="tre12" to="nter2" head="yes"/>
-      <!--  tre13  VAFIN <- sind -->
-      <edge from="ter4" id="tre13" to="nter9"/>
-      <!--  tre14  S <- PDS-SB -->
-      <edge from="nter10" id="tre14" to="nter2"/>
-      <!--  tre15  PDS-SB <- das -->
-      <edge from="ter5" id="tre15" to="nter10"/>
-      <!--  tre16  S <- CNP -->
-      <edge from="nter11" id="tre16" to="nter2"/>
-      <!--  tre17  CNP <- NP -->
+      <!--  tre0  ROOT <- S -->
+      <edge from="nter1" id="tre0" to="nter0" head="yes"/>
+      <!--  tre1  S <- NP-SB -->
+      <edge from="nter2" id="tre1" to="nter1"/>
+      <!--  tre2  NP-SB <- NN -->
+      <edge from="nter3" id="tre2" to="nter2" head="yes"/>
+      <!--  tre3  NN <- Belege -->
+      <edge from="ter0" id="tre3" to="nter3"/>
+      <!--  tre4  NP-SB <- PP -->
+      <edge from="nter4" id="tre4" to="nter2"/>
+      <!--  tre5  PP <- APPR -->
+      <edge from="nter5" id="tre5" to="nter4" head="yes"/>
+      <!--  tre6  APPR <- über -->
+      <edge from="ter1" id="tre6" to="nter5"/>
+      <!--  tre7  PP <- PPOSAT -->
+      <edge from="nter6" id="tre7" to="nter4"/>
+      <!--  tre8  PPOSAT <- sein -->
+      <edge from="ter2" id="tre8" to="nter6"/>
+      <!--  tre9  PP <- NN -->
+      <edge from="nter7" id="tre9" to="nter4"/>
+      <!--  tre10  NN <- Leben -->
+      <edge from="ter3" id="tre10" to="nter7"/>
+      <!--  tre11  S <- VAFIN -->
+      <edge from="nter8" id="tre11" to="nter1" head="yes"/>
+      <!--  tre12  VAFIN <- sind -->
+      <edge from="ter4" id="tre12" to="nter8"/>
+      <!--  tre13  S <- PDS-SB -->
+      <edge from="nter9" id="tre13" to="nter1"/>
+      <!--  tre14  PDS-SB <- das -->
+      <edge from="ter5" id="tre14" to="nter9"/>
+      <!--  tre15  S <- CNP -->
+      <edge from="nter10" id="tre15" to="nter1"/>
+      <!--  tre16  CNP <- NP -->
+      <edge from="nter11" id="tre16" to="nter10"/>
+      <!--  tre17  NP <- ADJA -->
       <edge from="nter12" id="tre17" to="nter11"/>
-      <!--  tre18  NP <- ADJA -->
-      <edge from="nter13" id="tre18" to="nter12"/>
-      <!--  tre19  ADJA <- Neue -->
-      <edge from="ter6" id="tre19" to="nter13"/>
-      <!--  tre20  NP <- NN -->
-      <edge from="nter14" id="tre20" to="nter12" head="yes"/>
-      <!--  tre21  NN <- Testament -->
-      <edge from="ter7" id="tre21" to="nter14"/>
-      <!--  tre22  CNP <- $, -->
-      <edge from="nter15" id="tre22" to="nter11"/>
-      <!--  tre23  $, <- , -->
-      <edge from="ter8" id="tre23" to="nter15"/>
-      <!--  tre24  CNP <- NP -->
-      <edge from="nter16" id="tre24" to="nter11"/>
-      <!--  tre25  NP <- ADV -->
-      <edge from="nter17" id="tre25" to="nter16"/>
-      <!--  tre26  ADV <- insbesondere -->
-      <edge from="ter9" id="tre26" to="nter17"/>
-      <!--  tre27  NP <- ART -->
-      <edge from="nter18" id="tre27" to="nter16"/>
-      <!--  tre28  ART <- die -->
-      <edge from="ter10" id="tre28" to="nter18"/>
-      <!--  tre29  NP <- NN -->
-      <edge from="nter19" id="tre29" to="nter16" head="yes"/>
-      <!--  tre30  NN <- Apostelgeschichte -->
-      <edge from="ter11" id="tre30" to="nter19"/>
-      <!--  tre31  CNP <- $, -->
-      <edge from="nter20" id="tre31" to="nter11"/>
-      <!--  tre32  $, <- , -->
-      <edge from="ter12" id="tre32" to="nter20"/>
-      <!--  tre33  CNP <- KON -->
-      <edge from="nter21" id="tre33" to="nter11"/>
-      <!--  tre34  KON <- und -->
-      <edge from="ter13" id="tre34" to="nter21"/>
-      <!--  tre35  CNP <- NP -->
-      <edge from="nter22" id="tre35" to="nter11" head="yes"/>
-      <!--  tre36  NP <- ART -->
-      <edge from="nter23" id="tre36" to="nter22"/>
-      <!--  tre37  ART <- die -->
-      <edge from="ter14" id="tre37" to="nter23"/>
-      <!--  tre38  NP <- NN -->
-      <edge from="nter24" id="tre38" to="nter22" head="yes"/>
-      <!--  tre39  NN <- Kirchenväter -->
-      <edge from="ter15" id="tre39" to="nter24"/>
-      <!--  tre40  NP <- CNP -->
-      <edge from="nter25" id="tre40" to="nter22"/>
-      <!--  tre41  CNP <- NN -->
-      <edge from="nter26" id="tre41" to="nter25"/>
-      <!--  tre42  NN <- Papias -->
-      <edge from="ter16" id="tre42" to="nter26"/>
-      <!--  tre43  CNP <- $, -->
-      <edge from="nter27" id="tre43" to="nter25"/>
-      <!--  tre44  $, <- , -->
-      <edge from="ter17" id="tre44" to="nter27"/>
-      <!--  tre45  CNP <- NP -->
-      <edge from="nter28" id="tre45" to="nter25"/>
-      <!--  tre46  NP <- NN -->
-      <edge from="nter29" id="tre46" to="nter28" head="yes"/>
-      <!--  tre47  NN <- Eusebius -->
-      <edge from="ter18" id="tre47" to="nter29"/>
-      <!--  tre48  NP <- PP -->
-      <edge from="nter30" id="tre48" to="nter28"/>
-      <!--  tre49  PP <- APPR -->
-      <edge from="nter31" id="tre49" to="nter30" head="yes"/>
-      <!--  tre50  APPR <- von -->
-      <edge from="ter19" id="tre50" to="nter31"/>
-      <!--  tre51  PP <- NN -->
-      <edge from="nter32" id="tre51" to="nter30"/>
-      <!--  tre52  NN <- Caesarea -->
-      <edge from="ter20" id="tre52" to="nter32"/>
-      <!--  tre53  CNP <- $, -->
-      <edge from="nter33" id="tre53" to="nter25"/>
-      <!--  tre54  $, <- , -->
-      <edge from="ter21" id="tre54" to="nter33"/>
-      <!--  tre55  CNP <- NN -->
-      <edge from="nter34" id="tre55" to="nter25"/>
-      <!--  tre56  NN <- Hieronymus -->
-      <edge from="ter22" id="tre56" to="nter34"/>
-      <!--  tre57  CNP <- KON -->
-      <edge from="nter35" id="tre57" to="nter25"/>
-      <!--  tre58  KON <- und -->
-      <edge from="ter23" id="tre58" to="nter35"/>
-      <!--  tre59  CNP <- NN -->
-      <edge from="nter36" id="tre59" to="nter25" head="yes"/>
-      <!--  tre60  NN <- Epiphanius -->
-      <edge from="ter24" id="tre60" to="nter36"/>
-      <!--  tre61  S <- $. -->
-      <edge from="nter37" id="tre61" to="nter2"/>
-      <!--  tre62  $. <- . -->
-      <edge from="ter25" id="tre62" to="nter37"/>
+      <!--  tre18  ADJA <- Neue -->
+      <edge from="ter6" id="tre18" to="nter12"/>
+      <!--  tre19  NP <- NN -->
+      <edge from="nter13" id="tre19" to="nter11" head="yes"/>
+      <!--  tre20  NN <- Testament -->
+      <edge from="ter7" id="tre20" to="nter13"/>
+      <!--  tre21  CNP <- $, -->
+      <edge from="nter14" id="tre21" to="nter10"/>
+      <!--  tre22  $, <- , -->
+      <edge from="ter8" id="tre22" to="nter14"/>
+      <!--  tre23  CNP <- NP -->
+      <edge from="nter15" id="tre23" to="nter10"/>
+      <!--  tre24  NP <- ADV -->
+      <edge from="nter16" id="tre24" to="nter15"/>
+      <!--  tre25  ADV <- insbesondere -->
+      <edge from="ter9" id="tre25" to="nter16"/>
+      <!--  tre26  NP <- ART -->
+      <edge from="nter17" id="tre26" to="nter15"/>
+      <!--  tre27  ART <- die -->
+      <edge from="ter10" id="tre27" to="nter17"/>
+      <!--  tre28  NP <- NN -->
+      <edge from="nter18" id="tre28" to="nter15" head="yes"/>
+      <!--  tre29  NN <- Apostelgeschichte -->
+      <edge from="ter11" id="tre29" to="nter18"/>
+      <!--  tre30  CNP <- $, -->
+      <edge from="nter19" id="tre30" to="nter10"/>
+      <!--  tre31  $, <- , -->
+      <edge from="ter12" id="tre31" to="nter19"/>
+      <!--  tre32  CNP <- KON -->
+      <edge from="nter20" id="tre32" to="nter10"/>
+      <!--  tre33  KON <- und -->
+      <edge from="ter13" id="tre33" to="nter20"/>
+      <!--  tre34  CNP <- NP -->
+      <edge from="nter21" id="tre34" to="nter10" head="yes"/>
+      <!--  tre35  NP <- ART -->
+      <edge from="nter22" id="tre35" to="nter21"/>
+      <!--  tre36  ART <- die -->
+      <edge from="ter14" id="tre36" to="nter22"/>
+      <!--  tre37  NP <- NN -->
+      <edge from="nter23" id="tre37" to="nter21" head="yes"/>
+      <!--  tre38  NN <- Kirchenväter -->
+      <edge from="ter15" id="tre38" to="nter23"/>
+      <!--  tre39  NP <- CNP -->
+      <edge from="nter24" id="tre39" to="nter21"/>
+      <!--  tre40  CNP <- NN -->
+      <edge from="nter25" id="tre40" to="nter24"/>
+      <!--  tre41  NN <- Papias -->
+      <edge from="ter16" id="tre41" to="nter25"/>
+      <!--  tre42  CNP <- $, -->
+      <edge from="nter26" id="tre42" to="nter24"/>
+      <!--  tre43  $, <- , -->
+      <edge from="ter17" id="tre43" to="nter26"/>
+      <!--  tre44  CNP <- NP -->
+      <edge from="nter27" id="tre44" to="nter24"/>
+      <!--  tre45  NP <- NN -->
+      <edge from="nter28" id="tre45" to="nter27" head="yes"/>
+      <!--  tre46  NN <- Eusebius -->
+      <edge from="ter18" id="tre46" to="nter28"/>
+      <!--  tre47  NP <- PP -->
+      <edge from="nter29" id="tre47" to="nter27"/>
+      <!--  tre48  PP <- APPR -->
+      <edge from="nter30" id="tre48" to="nter29" head="yes"/>
+      <!--  tre49  APPR <- von -->
+      <edge from="ter19" id="tre49" to="nter30"/>
+      <!--  tre50  PP <- NN -->
+      <edge from="nter31" id="tre50" to="nter29"/>
+      <!--  tre51  NN <- Caesarea -->
+      <edge from="ter20" id="tre51" to="nter31"/>
+      <!--  tre52  CNP <- $, -->
+      <edge from="nter32" id="tre52" to="nter24"/>
+      <!--  tre53  $, <- , -->
+      <edge from="ter21" id="tre53" to="nter32"/>
+      <!--  tre54  CNP <- NN -->
+      <edge from="nter33" id="tre54" to="nter24"/>
+      <!--  tre55  NN <- Hieronymus -->
+      <edge from="ter22" id="tre55" to="nter33"/>
+      <!--  tre56  CNP <- KON -->
+      <edge from="nter34" id="tre56" to="nter24"/>
+      <!--  tre57  KON <- und -->
+      <edge from="ter23" id="tre57" to="nter34"/>
+      <!--  tre58  CNP <- NN -->
+      <edge from="nter35" id="tre58" to="nter24" head="yes"/>
+      <!--  tre59  NN <- Epiphanius -->
+      <edge from="ter24" id="tre59" to="nter35"/>
+      <!--  tre60  S <- $. -->
+      <edge from="nter36" id="tre60" to="nter1"/>
+      <!--  tre61  $. <- . -->
+      <edge from="ter25" id="tre61" to="nter36"/>
     </tree>
   </constituency>
 </KAF>

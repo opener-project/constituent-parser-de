@@ -2,18 +2,13 @@ from lxml import etree
 from tree import Tree
 
 
-## will be used as global variables to generate recursively the KAF constituent nodes
-NOTER='nonter'
-TER='ter'
-EDGE='edge'
-noter_cnt=0
-ter_cnt=0
-edge_cnt=0
+
 
 
 list_t = []
 list_nt = []
 list_edge = []
+cnt_t = cnt_nt = cnt_edge = 0
 
 ##This function generates a "tree" xml element as defined in KAF from a string containing
 ##the penntreebank format and a list of term ids to do the linking
@@ -24,11 +19,14 @@ tree_node = create_constituency_layer(s, ids)
 e = etree.ElementTree(element=tree_node)
 e.write(sys.stdout,pretty_print=True)
 '''
-def convert_penn_to_kaf(tree_str,term_ids,logging,lemma_for_termid):
-    global list_t, list_nt,list_edge
+def convert_penn_to_kaf(tree_str,term_ids,logging,lemma_for_termid,off_t,off_nt,off_edge):
+    global list_t, list_nt,list_edge,cnt_t,cnt_nt,cnt_edge
     list_t = []
     list_nt = []
     list_edge = []
+    cnt_t = off_t
+    cnt_nt = off_nt
+    cnt_edge = off_edge
     
     this_tree = Tree(tree_str)
     logging.debug('\n'+str(this_tree))
@@ -42,9 +40,12 @@ def convert_penn_to_kaf(tree_str,term_ids,logging,lemma_for_termid):
 
     
     ##Creat the ROOT
-    num_nt = len(list_nt)
-    nt_id = 'nter'+str(num_nt)
-    list_nt.append((nt_id,'ROOT'))
+    create_extra_root = False
+    nt_id = None
+    if create_extra_root:
+        nt_id = 'nter'+str(cnt_nt)
+        cnt_nt +=1
+        list_nt.append((nt_id,'ROOT'))
     
     visit_node(this_tree, nt_id)
  
@@ -94,31 +95,31 @@ def convert_penn_to_kaf(tree_str,term_ids,logging,lemma_for_termid):
         root.append(etree.Comment(comment))
         root.append(ele)
           
-    return root
+    return root,cnt_t,cnt_nt,cnt_edge
 
     
 def visit_node(node,id_parent=None):
-    global list_t, list_nt,list_edge
+    global list_t, list_nt,list_edge,cnt_t,cnt_nt,cnt_edge
     if isinstance(node,str): #is a terminal
         ##Create the terminal
-        num_t = len(list_t)
-        t_id = 'ter'+str(num_t)
+        t_id = 'ter'+str(cnt_t)
+        cnt_t += 1
         list_t.append((t_id,str(node)))
         
         ##Create the edge with the parent
-        num_edges = len(list_edge)
-        edge_id = 'tre'+str(num_edges)
+        edge_id = 'tre'+str(cnt_edge)
+        cnt_edge +=1
         list_edge.append((edge_id,t_id,id_parent))
     else:  #Is a non terminal
         ##Create the nonterminal
-        num_nt = len(list_nt)
-        nt_id = 'nter'+str(num_nt)
+        nt_id = 'nter'+str(cnt_nt)
+        cnt_nt += 1 
         list_nt.append((nt_id,node.node))
         
         ##Create the linking with the parent
         if id_parent is not None:
-            num_edges = len(list_edge)
-            edge_id = 'tre'+str(num_edges)
+            edge_id = 'tre'+str(cnt_edge)
+            cnt_edge += 1
             list_edge.append((edge_id,nt_id,id_parent))
         
         ##Call to the child
