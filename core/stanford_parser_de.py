@@ -16,8 +16,8 @@ from convert_penn_to_kaf import convert_penn_to_kaf
 # 23dec2013 --> adapted output to KAF
 
 this_name = 'Stanford German constituency parser trained on NEGRA corpus'
-version = '1.0'
-last_modified = '23dec2013'
+version = '1.1'
+last_modified = '17jan2014'
 this_layer = 'constituents'
 __module_folder__ = os.path.dirname(__file__)
 
@@ -73,7 +73,9 @@ if lang != 'de':
 logging.debug('Extracting sentences from the KAF')
 
 termid_for_token = {}
+lemma_for_termid = {}
 for term in my_kaf.getTerms():
+    lemma_for_termid[term.getId()] = term.getLemma()
     tokens_id = term.get_list_span()
     for token_id in tokens_id:
         termid_for_token[token_id] = term.getId()
@@ -127,7 +129,7 @@ logging.debug('STANFORD LOG: '+ stanford_error)
 const = etree.Element('constituency')
 for num_sent, str_tree in enumerate(stanford_output.splitlines()):
     list_term_ids_for_sentence = term_ids[num_sent]
-    tree_obj = convert_penn_to_kaf(str_tree,list_term_ids_for_sentence)
+    tree_obj = convert_penn_to_kaf(str_tree,list_term_ids_for_sentence,logging,lemma_for_termid)
     const.append(tree_obj)
 
 my_kaf.tree.getroot().append(const)
