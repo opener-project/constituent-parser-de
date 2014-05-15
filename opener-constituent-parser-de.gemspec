@@ -16,6 +16,7 @@ Gem::Specification.new do |gem|
   gem.files = Dir.glob([
     'core/site-packages/pre_build/**/*',
     'core/vendor/**/*',
+    'core/*.py',
     'ext/**/*',
     'lib/**/*',
     '*.gemspec',
