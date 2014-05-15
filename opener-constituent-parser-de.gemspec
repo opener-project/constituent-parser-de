@@ -3,9 +3,6 @@ require File.expand_path(
   __FILE__
 )
 
-generated = Dir.glob('core/site-packages/pre_build/**/*') +
-  Dir.glob('core/vendor/stanford-parser/*.jar')
-
 Gem::Specification.new do |gem|
   gem.name        = 'opener-constituent-parser-de'
   gem.version     = Opener::ConstituentParsers::DE::VERSION
@@ -16,9 +13,17 @@ Gem::Specification.new do |gem|
 
   gem.required_ruby_version = '>= 1.9.2'
 
-  gem.files       = (`git ls-files`.split("\n") + generated).sort
-  gem.executables = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
-  gem.test_files  = gem.files.grep(%r{^(test|spec|features)/})
+  gem.files = Dir.glob([
+    'core/site-packages/pre_build/**/*',
+    'core/vendor/**/*',
+    'ext/**/*',
+    'lib/**/*',
+    '*.gemspec',
+    '*_requirements.txt',
+    'README.md'
+  ]).select { |f| File.file?(f) }
+
+  gem.executables = Dir.glob('bin/*').map { |f| File.basename(f) }
 
   gem.add_dependency 'opener-build-tools', ['>= 0.2.7']
 
