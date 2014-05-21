@@ -37,7 +37,7 @@ STANFORD_DIRECTORY = File.expand_path(
 STANFORD_ARCHIVE = 'stanford-parser-2013-04-05.zip'
 
 # URL to the zip archive of the Stanford parser.
-STANFORD_ARCHIVE_URL = "http://nlp.stanford.edu/software/#{STANFORD_ARCHIVE}"
+STANFORD_ARCHIVE_URL = "https://s3-eu-west-1.amazonaws.com/opener/stanford/#{STANFORD_ARCHIVE}"
 
 ##
 # Verifies the requirements to install thi Gem.
