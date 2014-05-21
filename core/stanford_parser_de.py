@@ -10,6 +10,12 @@ import shutil
 import glob
 import logging
 
+__module_folder__ = os.path.dirname(__file__)
+
+# This updates the load path to ensure that the local site-packages directory
+# can be used to load packages (e.g. a locally installed copy of lxml).
+sys.path.append(os.path.join(__module_folder__, 'site-packages/pre_install'))
+
 from convert_penn_to_kaf import convert_penn_to_kaf
 
 ## Last changes
@@ -19,12 +25,6 @@ this_name = 'Stanford German constituency parser trained on NEGRA corpus'
 version = '1.3'
 last_modified = '17jan2014'
 this_layer = 'constituents'
-__module_folder__ = os.path.dirname(__file__)
-
-# This updates the load path to ensure that the local site-packages directory
-# can be used to load packages (e.g. a locally installed copy of lxml).
-sys.path.append(os.path.join(__module_folder__, 'site-packages/pre_build'))
-sys.path.append(os.path.join(__module_folder__, 'site-packages/pre_install'))
 
 from VUKafParserPy import KafParser
 from lxml import etree
@@ -42,7 +42,7 @@ logging.basicConfig(stream=sys.stderr,format='%(asctime)s - %(levelname)s - %(me
 
 ## MAIN ##
 
-if not sys.stdin.isatty(): 
+if not sys.stdin.isatty():
     ## READING FROM A PIPE
     pass
 else:
@@ -59,8 +59,8 @@ try:
       my_time_stamp = False
 except getopt.GetoptError:
   pass
-  
-  
+
+
 logging.debug('Starting stanford parser for German text')
 logging.debug('Loading and parsing KAF file ...')
 my_kaf = KafParser(sys.stdin)
@@ -69,7 +69,7 @@ lang = my_kaf.getLanguage()
 if lang != 'de':
   print>>sys.stdout,'ERROR! Language is',lang,'and must be "de" (German)'
   sys.exit(-1)
-  
+
 logging.debug('Extracting sentences from the KAF')
 
 termid_for_token = {}
@@ -81,7 +81,7 @@ for term in my_kaf.getTerms():
         termid_for_token[token_id] = term.getId()
 
 sentences = []
-current_sent = [] 
+current_sent = []
 previous_sent = None
 term_ids = []
 current_sent_tid = []
@@ -90,19 +90,19 @@ for token,sent,token_id in my_kaf.getTokens():
   if sent != previous_sent and previous_sent!=None:
     sentences.append(current_sent)
     current_sent = [token]
-    
+
     term_ids.append(current_sent_tid)
     current_sent_tid = [termid_for_token[token_id]]
   else:
     current_sent.append(token)
     current_sent_tid.append(termid_for_token[token_id])
   previous_sent = sent
-  
+
 if len(current_sent) !=0:
   sentences.append(current_sent)
   term_ids.append(current_sent_tid)
-  
- 
+
+
 logging.debug('Calling to Stanford parser for GERMAN in '+STANFORD_HOME)
 
 
