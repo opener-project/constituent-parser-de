@@ -1,41 +1,46 @@
 [![Build Status](https://drone.io/github.com/opener-project/constituent-parser-de/status.png)](https://drone.io/github.com/opener-project/constituent-parser-de/latest)
 
-VU-parser-DE_kernel
-===================
+Constituent Parser German
+=========================
 
 Introduction
 ------------
 
-This is a parser for German text using the Stanford parser (http://nlp.stanford.edu/software/lex-parser.shtml). The input for this module has to be a valid
-KAF file with at least the text layer. The output will be the constituent trees in pennTreebank format for each of the sentences in the input KAF.
-The tokenization and sentence splitting is taken from the input KAF file, so if your input file has a wrong tokenization/splitting, the output could
-contain errors. The number of output constituent trees will be exactly the same as the number of sentences in your input KAF
+This is a parser for German text using the Stanford parser
+(<http://nlp.stanford.edu/software/lex-parser.shtml>). The input for this module
+has to be a valid KAF file with at least the text layer. The output will be the
+constituent trees in pennTreebank format for each of the sentences in the input
+KAF.
+
+The tokenization and sentence splitting is taken from the input KAF file, so if
+your input file has a wrong tokenization/splitting, the output could contain
+errors. The number of output constituent trees will be exactly the same as the
+number of sentences in your input KAF
 
 Requirements
 -----------
-* VUKafParserPy: parser in python for KAF files (https://github.com/opener-project/VU-kaf-parser)
+
+* VUKafParserPy: parser in python for KAF files
+  (<https://github.com/opener-project/VU-kaf-parser>)
 * lxml: library for processing xml in python
 * Stanford parser: http://nlp.stanford.edu/software/lex-parser.shtml
-
-Installation
------------
-Clone the repository to your local machine and set the varible STANFORD_HOME in the file core/stanford_parser_de.py
-to point to your local folder of the Stanford parser.
 
 How to run the module with Python
 ---------------------------------
 
-You can run this module from the command line using Python. The main script is core/stanford_parser_de.py. This script reads the KAF from the standard input
-and writes the output to the standard output, generating some log information in the standard error output. To process one file just run:
-````shell
-cat input.kaf | core/stanford_parser_de.py > input.tree
-````
+You can run this module from the command line using Python. The main script is
+core/stanford_parser_de.py. This script reads the KAF from the standard input
+and writes the output to the standard output, generating some log information
+in the standard error output. To process one file just run:
 
-This will read the KAF file in "input.kaf" and will store the constituent trees in "input.tree".
+    cat input.kaf | core/stanford_parser_de.py > input.tree
 
+This will read the KAF file in "input.kaf" and will store the constituent trees
+in "input.tree".
 
 Contact
 ------
+
 * Ruben Izquierdo
 * Vrije University of Amsterdam
 * ruben.izquierdobevia@vu.nl
