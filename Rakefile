@@ -39,5 +39,5 @@ Dir.glob(File.expand_path('../task/*.rake', __FILE__)) do |task|
   import(task)
 end
 
-task :build   => [:stanford]
+task :build   => :stanford
 task :default => :test
