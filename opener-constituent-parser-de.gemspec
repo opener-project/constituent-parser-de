@@ -10,6 +10,7 @@ Gem::Specification.new do |gem|
   gem.summary     = 'Constituent parser for the German language'
   gem.description = gem.summary
   gem.has_rdoc    = 'yard'
+  gem.extensions  = ['ext/hack/Rakefile']
 
   gem.required_ruby_version = '>= 1.9.2'
 
@@ -25,7 +26,7 @@ Gem::Specification.new do |gem|
 
   gem.executables = Dir.glob('bin/*').map { |f| File.basename(f) }
 
-  gem.add_dependency 'opener-build-tools', ['>= 0.2.7']
+  gem.add_dependency 'cliver'
 
   gem.add_development_dependency 'rspec', '~> 3.0'
   gem.add_development_dependency 'cucumber'

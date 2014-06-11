@@ -1,81 +1,42 @@
 require 'bundler/gem_tasks'
-require 'opener/build-tools/tasks/python'
-require 'opener/build-tools/tasks/clean'
+require 'rake/clean'
 
-require_relative 'ext/hack/support'
+##
+# Stanford Configuration.
+#
+# These settings are used for downloading a local copy of the Stanford parser.
+# This parser is packaged in the Gem upon building it.
 
-desc 'Lists all the files of the Gemspec'
-task :files do
-  gemspec = Gem::Specification.load('opener-constituent-parser-de.gemspec')
+# Path to the directory containing the Stanford parser files.
+STANFORD_DIRECTORY = File.expand_path(
+  '../core/vendor/stanford-parser',
+  __FILE__
+)
 
-  puts gemspec.files.sort
-end
+# Name of the Stanford zip archive.
+STANFORD_ARCHIVE = 'stanford-parser-2013-04-05.zip'
 
-desc 'Verifies the requirements'
-task :requirements do
-  verify_requirements
+# URL to the zip archive of the Stanford parser.
+STANFORD_ARCHIVE_URL = "https://s3-eu-west-1.amazonaws.com/opener/stanford/#{STANFORD_ARCHIVE}"
 
-  require_executable('curl')
-  require_executable('unzip')
-end
-
-namespace :clean do
-  desc 'Removes Stanford parser related files'
-  task :stanford do
-    Dir.glob(File.join(TMP_DIRECTORY, '*')).each do |path|
-      sh "rm -rf #{path}"
-    end
-
-    Dir.glob(File.join(STANFORD_DIRECTORY, '*.jar')).each do |path|
-      sh "rm #{path}"
-    end
-  end
-end
-
-desc 'Cleans up the repository'
-task :clean => [
-  'python:clean:bytecode',
-  'python:clean:packages',
-  'clean:tmp',
-  'clean:gems',
-  'clean:stanford'
+# The names of the JAR files to copy over to vendor/core/stanford-parser.
+STANFORD_JAR_NAMES = [
+  'stanford-parser.jar',
+  'stanford-parser-2.0.5-models.jar'
 ]
 
-desc 'Installs the Stanford parser JAR archives'
-task :stanford do
-  zipname   = File.join(TMP_DIRECTORY, STANFORD_ARCHIVE)
-  directory = File.join(TMP_DIRECTORY, File.basename(STANFORD_ARCHIVE, '.zip'))
+CLEAN.include(
+  'tmp/*',
+  'pkg',
+  '**/*.pyo',
+  '**/*.pyc',
+  File.join(STANFORD_DIRECTORY, '*'),
+  'core/site-packages/pre_build',
+  'core/site-packages/pre_install'
+)
 
-  Dir.chdir(TMP_DIRECTORY) do
-    unless File.file?(zipname)
-      puts 'Downloading the Stanford parser...'
-
-      sh "curl -O #{STANFORD_ARCHIVE_URL}"
-    end
-
-    unless File.directory?(directory)
-      puts 'Unpacking the Stanford parser...'
-
-      sh "unzip #{STANFORD_ARCHIVE}"
-    end
-
-    puts 'Moving JAR archives into place...'
-
-    sh "cp -f #{directory}/stanford-parser.jar #{STANFORD_DIRECTORY}"
-    sh "cp -f #{directory}/stanford-parser-2.0.5-models.jar #{STANFORD_DIRECTORY}"
-  end
+Dir.glob(File.expand_path('../task/*.rake', __FILE__)) do |task|
+  import(task)
 end
 
-desc 'Alias for python:compile'
-task :compile => ['stanford', 'python:compile']
-
-desc 'Runs the tests'
-task :test => :compile do
-  sh('cucumber features')
-end
-
-desc 'Performs preparations for building the Gem'
-task :before_build => [:requirements, 'python:clean:bytecode']
-
-task :build   => :before_build
 task :default => :test
