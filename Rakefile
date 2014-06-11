@@ -19,7 +19,7 @@ STANFORD_ARCHIVE = 'stanford-parser-2013-04-05.zip'
 # URL to the zip archive of the Stanford parser.
 STANFORD_ARCHIVE_URL = "https://s3-eu-west-1.amazonaws.com/opener/stanford/#{STANFORD_ARCHIVE}"
 
-# The names of the JAR files to copy over to vendor/core/stanford-parser.
+# The names of the JAR files to copy over to core/vendor/stanford-parser.
 STANFORD_JAR_NAMES = [
   'stanford-parser.jar',
   'stanford-parser-2.0.5-models.jar'
