@@ -28,8 +28,8 @@ Gem::Specification.new do |gem|
   gem.executables = Dir.glob('bin/*').map { |f| File.basename(f) }
 
   gem.add_dependency 'cliver'
+  gem.add_dependency 'rake'
 
   gem.add_development_dependency 'rspec', '~> 3.0'
   gem.add_development_dependency 'cucumber'
-  gem.add_development_dependency 'rake'
 end
