@@ -52,32 +52,18 @@ module Opener
       # process information.
       #
       # @param [String] input The input to process.
-      # @return [Array]
+      # @return [String]
       #
       def run(input)
         unless File.file?(kernel)
           raise "The Python kernel (#{kernel}) does not exist"
         end
 
-        return Open3.capture3(command, :stdin_data => input)
-      end
+        stdout, stderr, process =  Open3.capture3(command, :stdin_data => input)
 
-      ##
-      # Runs the command and takes care of error handling/aborting based on the
-      # output.
-      #
-      # @see #run
-      #
-      def run!(input)
-        stdout, stderr, process = run(input)
+        raise stderr unless process.success?
 
-        if process.success?
-          puts stdout
-
-          STDERR.puts(stderr) unless stderr.empty?
-        else
-          abort stderr
-        end
+        return stdout
       end
 
       protected
