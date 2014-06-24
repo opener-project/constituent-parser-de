@@ -47,26 +47,33 @@ module Opener
         return "python -E -O #{kernel} #{args.join(' ')}"
       end
 
-      ##
       # Runs the command and returns the output of STDOUT, STDERR and the
       # process information.
       #
-      # @param [String] input The input to process.
-      # @return [String]
+      # @param [String] input The input to tag.
+      # @return [Array]
       #
       def run(input)
-        unless File.file?(kernel)
-          raise "The Python kernel (#{kernel}) does not exist"
-        end
-
-        stdout, stderr, process =  Open3.capture3(command, :stdin_data => input)
-
+        stdout, stderr, process = capture(input)
         raise stderr unless process.success?
-
-        return stdout
+        return stdout, stderr, process
       end
 
       protected
+      
+      ##
+      # capture3 method doesn't work properly with Jruby, so 
+      # this is a workaround
+      #    
+      def capture(input)
+        Open3.popen3(*command.split(" ")) {|i, o, e, t|
+          out_reader = Thread.new { o.read }
+          err_reader = Thread.new { e.read }
+          i.write input
+          i.close
+          [out_reader.value, err_reader.value, t.value]
+        }
+      end
 
       ##
       # @return [String]
