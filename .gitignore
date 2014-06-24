@@ -15,6 +15,7 @@ core/vendor/stanford-parser/*
 nosetests.xml
 Gemfile.lock
 tmp/*
+pkg/*
 
 # Keep these files.
 !.gitkeep
