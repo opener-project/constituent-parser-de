@@ -7,7 +7,7 @@ def kernel_root
 end
 
 def kernel
-  return Opener::ConstituentParsers::DE.new
+  return Opener::ConstituentParsers::DE.new(:args => ['--no-time'])
 end
 
 RSpec.configure do |config|
