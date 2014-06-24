@@ -1,5 +1,5 @@
 file 'tmp/stanford.zip' do |task|
-  sh "wget #{STANFORD_ARCHIVE_URL} -O #{task.name}"
+  sh "wget #{STANFORD_ARCHIVE_URL} -O #{task.name} --no-check-certificate"
 end
 
 directory 'tmp/stanford' => ['tmp/stanford.zip'] do |task|
