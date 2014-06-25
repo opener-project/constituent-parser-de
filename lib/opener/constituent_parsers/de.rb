@@ -44,7 +44,7 @@ module Opener
       # @return [String]
       #
       def command
-        return "python -E -O #{kernel} #{args.join(' ')}"
+        return "python -E #{kernel} #{args.join(' ')}"
       end
 
       # Runs the command and returns the output of STDOUT, STDERR and the
@@ -60,11 +60,11 @@ module Opener
       end
 
       protected
-      
+
       ##
-      # capture3 method doesn't work properly with Jruby, so 
+      # capture3 method doesn't work properly with Jruby, so
       # this is a workaround
-      #    
+      #
       def capture(input)
         Open3.popen3(*command.split(" ")) {|i, o, e, t|
           out_reader = Thread.new { o.read }
